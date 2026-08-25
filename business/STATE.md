@@ -3,7 +3,7 @@
 Operating state for the content business. Read this first every session.
 Keep it short — detail belongs in `journal/`.
 
-_Last updated: 2026-08-25 (run 002)_
+_Last updated: 2026-08-25 (run 003)_
 
 ---
 
@@ -28,12 +28,16 @@ agents. Not AI hype, not generic dev advice — specific, opinionated process.
 | Newsletter issue 001 | Drafted, brand voice, **awaiting approval** |
 | 60 social posts (X + LinkedIn) | Built run 002 — `content/social/posts.md` |
 | Landing page copy | Drafted run 002, **awaiting approval** |
+| Newsletter issue 002 | Drafted run 003, **awaiting approval** |
+| Rationalization cluster analysis | Built run 003 — `content/clusters.json` |
 
 ## Key numbers
 
 - **362** publishable content atoms extracted from existing material
 - **~72 weeks** of weekday posting runway, zero new writing required
 - **153** rationalizations / **209** red flags across the library
+- Six argument-shape clusters found (run 003). Largest: deferral, 19 across
+  **16 of 24** disciplines. Editorial runway: 4+ more issues, each with a verified finding.
 - Audience: **0** — no list, no channel, no distribution surface yet
 
 ## The strategic finding (run 001)
@@ -67,10 +71,18 @@ See `inbox/` for detail:
 
 1. Get accounts created and the name picked — the only remaining hard blockers
 2. On approval: publish landing page, send issue 001, start the 60-post calendar
-3. Draft issues 002–004 (002 is scoped: the "technically true" cluster, 134 atoms
-   unanalyzed)
+3. Draft issue 003 (scoped: the "costs more than it returns" cluster — the one that's
+   sometimes right, which makes it the hardest to write well)
 4. Instrument: without subscriber and open-rate numbers, every later decision is a guess
 5. Monetization: hold until audience > 0. No offers to an empty room.
+
+## Standing failure mode — watch for this
+
+Three times now the tempting move has been to state a number I had not derived
+(run 001: a fabricated statistic; run 002: fake social proof; run 003: two cluster
+ranks asserted before the analysis existed). Every published number must trace to a
+line of tool output before it ships. `cluster-rationalizations.js --audit` exists
+specifically so these are checkable by hand.
 
 ## Guardrails in force
 
