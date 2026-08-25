@@ -1,0 +1,485 @@
+{
+  "brand": "The Later Tax",
+  "posts": [
+    {
+      "date": "2026-08-26",
+      "id": "security-and-hardening--rationalization-1",
+      "skill": "security-and-hardening",
+      "type": "rationalization",
+      "x": "\"This is an internal tool, security doesn't matter\"\n\nInternal tools get compromised. Attackers target the weakest link.",
+      "linkedin": "\"This is an internal tool, security doesn't matter\"\n\nInternal tools get compromised. Attackers target the weakest link.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-08-27",
+      "id": "api-and-interface-design--rationalization-1",
+      "skill": "api-and-interface-design",
+      "type": "rationalization",
+      "x": "\"We'll document the API later\"\n\nThe types ARE the documentation. Define them first.",
+      "linkedin": "\"We'll document the API later\"\n\nThe types ARE the documentation. Define them first.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-08-28",
+      "id": "code-review-and-quality--rationalization-1",
+      "skill": "code-review-and-quality",
+      "type": "rationalization",
+      "x": "\"It works, that's good enough\"\n\nWorking code that's unreadable, insecure, or architecturally wrong creates debt that compounds.",
+      "linkedin": "\"It works, that's good enough\"\n\nWorking code that's unreadable, insecure, or architecturally wrong creates debt that compounds.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-08-31",
+      "id": "deprecation-and-migration--rationalization-1",
+      "skill": "deprecation-and-migration",
+      "type": "rationalization",
+      "x": "\"It still works, why remove it?\"\n\nWorking code that nobody maintains accumulates security debt and complexity. Maintenance cost grows silently.",
+      "linkedin": "\"It still works, why remove it?\"\n\nWorking code that nobody maintains accumulates security debt and complexity. Maintenance cost grows silently.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-01",
+      "id": "doubt-driven-development--rationalization-1",
+      "skill": "doubt-driven-development",
+      "type": "rationalization",
+      "x": "\"I'm confident, skip the doubt step\"\n\nConfidence correlates poorly with correctness on novel problems. Moments of certainty are exactly when blind spots hide.",
+      "linkedin": "\"I'm confident, skip the doubt step\"\n\nConfidence correlates poorly with correctness on novel problems. Moments of certainty are exactly when blind spots hide.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-02",
+      "id": "git-workflow-and-versioning--rationalization-1",
+      "skill": "git-workflow-and-versioning",
+      "type": "rationalization",
+      "x": "\"I'll commit when the feature is done\"\n\nOne giant commit is impossible to review, debug, or revert. Commit each slice.",
+      "linkedin": "\"I'll commit when the feature is done\"\n\nOne giant commit is impossible to review, debug, or revert. Commit each slice.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-03",
+      "id": "interview-me--rationalization-1",
+      "skill": "interview-me",
+      "type": "rationalization",
+      "x": "\"The ask is clear enough\"\n\nIf you can't write the user's desired outcome in one sentence right now, the ask isn't clear. Run Step 1 before deciding.",
+      "linkedin": "\"The ask is clear enough\"\n\nIf you can't write the user's desired outcome in one sentence right now, the ask isn't clear. Run Step 1 before deciding.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-04",
+      "id": "performance-optimization--rationalization-1",
+      "skill": "performance-optimization",
+      "type": "rationalization",
+      "x": "\"We'll optimize later\"\n\nPerformance debt compounds. Fix obvious anti-patterns now, defer micro-optimizations.",
+      "linkedin": "\"We'll optimize later\"\n\nPerformance debt compounds. Fix obvious anti-patterns now, defer micro-optimizations.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-07",
+      "id": "browser-testing-with-devtools--rationalization-1",
+      "skill": "browser-testing-with-devtools",
+      "type": "rationalization",
+      "x": "\"It looks right in my mental model\"\n\nRuntime behavior regularly differs from what code suggests. Verify with actual browser state.",
+      "linkedin": "\"It looks right in my mental model\"\n\nRuntime behavior regularly differs from what code suggests. Verify with actual browser state.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-08",
+      "id": "code-simplification--rationalization-1",
+      "skill": "code-simplification",
+      "type": "rationalization",
+      "x": "\"It's working, no need to touch it\"\n\nWorking code that's hard to read will be hard to fix when it breaks. Simplifying now saves time on every future change.",
+      "linkedin": "\"It's working, no need to touch it\"\n\nWorking code that's hard to read will be hard to fix when it breaks. Simplifying now saves time on every future change.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-09",
+      "id": "observability-and-instrumentation--rationalization-1",
+      "skill": "observability-and-instrumentation",
+      "type": "rationalization",
+      "x": "\"I'll add logging after it works\"\n\n\"After\" becomes \"after the first incident\", which is the most expensive moment to discover you're blind. Instrument as you build.",
+      "linkedin": "\"I'll add logging after it works\"\n\n\"After\" becomes \"after the first incident\", which is the most expensive moment to discover you're blind. Instrument as you build.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-10",
+      "id": "spec-driven-development--rationalization-1",
+      "skill": "spec-driven-development",
+      "type": "rationalization",
+      "x": "\"This is simple, I don't need a spec\"\n\nSimple tasks don't need *long* specs, but they still need acceptance criteria. A two-line spec is fine.",
+      "linkedin": "\"This is simple, I don't need a spec\"\n\nSimple tasks don't need *long* specs, but they still need acceptance criteria. A two-line spec is fine.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-11",
+      "id": "test-driven-development--rationalization-1",
+      "skill": "test-driven-development",
+      "type": "rationalization",
+      "x": "\"I'll write tests after the code works\"\n\nYou won't. And tests written after the fact test implementation, not behavior.",
+      "linkedin": "\"I'll write tests after the code works\"\n\nYou won't. And tests written after the fact test implementation, not behavior.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-14",
+      "id": "incremental-implementation--rationalization-1",
+      "skill": "incremental-implementation",
+      "type": "rationalization",
+      "x": "\"I'll test it all at the end\"\n\nBugs compound. A bug in Slice 1 makes Slices 2-5 wrong. Test each slice.",
+      "linkedin": "\"I'll test it all at the end\"\n\nBugs compound. A bug in Slice 1 makes Slices 2-5 wrong. Test each slice.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-15",
+      "id": "source-driven-development--rationalization-1",
+      "skill": "source-driven-development",
+      "type": "rationalization",
+      "x": "\"I'm confident about this API\"\n\nConfidence is not evidence. Training data contains outdated patterns that look correct but break against current versions. Verify.",
+      "linkedin": "\"I'm confident about this API\"\n\nConfidence is not evidence. Training data contains outdated patterns that look correct but break against current versions. Verify.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-16",
+      "id": "ci-cd-and-automation--rationalization-1",
+      "skill": "ci-cd-and-automation",
+      "type": "rationalization",
+      "x": "\"CI is too slow\"\n\nOptimize the pipeline (see CI Optimization below), don't skip it. A 5-minute pipeline prevents hours of debugging.",
+      "linkedin": "\"CI is too slow\"\n\nOptimize the pipeline (see CI Optimization below), don't skip it. A 5-minute pipeline prevents hours of debugging.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-17",
+      "id": "debugging-and-error-recovery--rationalization-1",
+      "skill": "debugging-and-error-recovery",
+      "type": "rationalization",
+      "x": "\"I know what the bug is, I'll just fix it\"\n\nYou might be right 70% of the time. The other 30% costs hours. Reproduce first.",
+      "linkedin": "\"I know what the bug is, I'll just fix it\"\n\nYou might be right 70% of the time. The other 30% costs hours. Reproduce first.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-18",
+      "id": "documentation-and-adrs--rationalization-1",
+      "skill": "documentation-and-adrs",
+      "type": "rationalization",
+      "x": "\"The code is self-documenting\"\n\nCode shows what. It doesn't show why, what alternatives were rejected, or what constraints apply.",
+      "linkedin": "\"The code is self-documenting\"\n\nCode shows what. It doesn't show why, what alternatives were rejected, or what constraints apply.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-21",
+      "id": "frontend-ui-engineering--rationalization-1",
+      "skill": "frontend-ui-engineering",
+      "type": "rationalization",
+      "x": "\"Accessibility is a nice-to-have\"\n\nIt's a legal requirement in many jurisdictions and an engineering quality standard.",
+      "linkedin": "\"Accessibility is a nice-to-have\"\n\nIt's a legal requirement in many jurisdictions and an engineering quality standard.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-22",
+      "id": "shipping-and-launch--rationalization-1",
+      "skill": "shipping-and-launch",
+      "type": "rationalization",
+      "x": "\"It works in staging, it'll work in production\"\n\nProduction has different data, traffic patterns, and edge cases. Monitor after deploy.",
+      "linkedin": "\"It works in staging, it'll work in production\"\n\nProduction has different data, traffic patterns, and edge cases. Monitor after deploy.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-23",
+      "id": "context-engineering--rationalization-1",
+      "skill": "context-engineering",
+      "type": "rationalization",
+      "x": "\"The agent should figure out the conventions\"\n\nIt can't read your mind. Write a rules file — 10 minutes that saves hours.",
+      "linkedin": "\"The agent should figure out the conventions\"\n\nIt can't read your mind. Write a rules file — 10 minutes that saves hours.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-24",
+      "id": "planning-and-task-breakdown--rationalization-1",
+      "skill": "planning-and-task-breakdown",
+      "type": "rationalization",
+      "x": "\"I'll figure it out as I go\"\n\nThat's how you end up with a tangled mess and rework. 10 minutes of planning saves hours.",
+      "linkedin": "\"I'll figure it out as I go\"\n\nThat's how you end up with a tangled mess and rework. 10 minutes of planning saves hours.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-25",
+      "id": "security-and-hardening--rationalization-2",
+      "skill": "security-and-hardening",
+      "type": "rationalization",
+      "x": "\"We'll add security later\"\n\nSecurity retrofitting is 10x harder than building it in. Add it now.",
+      "linkedin": "\"We'll add security later\"\n\nSecurity retrofitting is 10x harder than building it in. Add it now.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-28",
+      "id": "api-and-interface-design--rationalization-2",
+      "skill": "api-and-interface-design",
+      "type": "rationalization",
+      "x": "\"We don't need pagination for now\"\n\nYou will the moment someone has 100+ items. Add it from the start.",
+      "linkedin": "\"We don't need pagination for now\"\n\nYou will the moment someone has 100+ items. Add it from the start.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-29",
+      "id": "code-review-and-quality--rationalization-2",
+      "skill": "code-review-and-quality",
+      "type": "rationalization",
+      "x": "\"I wrote it, so I know it's correct\"\n\nAuthors are blind to their own assumptions. Every change benefits from another set of eyes.",
+      "linkedin": "\"I wrote it, so I know it's correct\"\n\nAuthors are blind to their own assumptions. Every change benefits from another set of eyes.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-09-30",
+      "id": "deprecation-and-migration--rationalization-2",
+      "skill": "deprecation-and-migration",
+      "type": "rationalization",
+      "x": "\"Someone might need it later\"\n\nIf it's needed later, it can be rebuilt. Keeping unused code \"just in case\" costs more than rebuilding.",
+      "linkedin": "\"Someone might need it later\"\n\nIf it's needed later, it can be rebuilt. Keeping unused code \"just in case\" costs more than rebuilding.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-01",
+      "id": "doubt-driven-development--rationalization-2",
+      "skill": "doubt-driven-development",
+      "type": "rationalization",
+      "x": "\"Spawning a reviewer is expensive\"\n\nDebugging a wrong commit in production is more expensive. The check is bounded; the bug isn't.",
+      "linkedin": "\"Spawning a reviewer is expensive\"\n\nDebugging a wrong commit in production is more expensive. The check is bounded; the bug isn't.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-02",
+      "id": "git-workflow-and-versioning--rationalization-2",
+      "skill": "git-workflow-and-versioning",
+      "type": "rationalization",
+      "x": "\"The message doesn't matter\"\n\nMessages are documentation. Future you (and future agents) will need to understand what changed and why.",
+      "linkedin": "\"The message doesn't matter\"\n\nMessages are documentation. Future you (and future agents) will need to understand what changed and why.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-05",
+      "id": "interview-me--rationalization-2",
+      "skill": "interview-me",
+      "type": "rationalization",
+      "x": "\"Asking too many questions wastes their time\"\n\nTime wasted by 4–6 targeted questions is small. Time wasted by building the wrong thing is enormous, and the user is the one bearing that cost.",
+      "linkedin": "\"Asking too many questions wastes their time\"\n\nTime wasted by 4–6 targeted questions is small. Time wasted by building the wrong thing is enormous, and the user is the one bearing that cost.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-06",
+      "id": "performance-optimization--rationalization-2",
+      "skill": "performance-optimization",
+      "type": "rationalization",
+      "x": "\"It's fast on my machine\"\n\nYour machine isn't the user's. Profile on representative hardware and networks.",
+      "linkedin": "\"It's fast on my machine\"\n\nYour machine isn't the user's. Profile on representative hardware and networks.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-07",
+      "id": "browser-testing-with-devtools--rationalization-2",
+      "skill": "browser-testing-with-devtools",
+      "type": "rationalization",
+      "x": "\"Console warnings are fine\"\n\nWarnings become errors. Clean consoles catch bugs early.",
+      "linkedin": "\"Console warnings are fine\"\n\nWarnings become errors. Clean consoles catch bugs early.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-08",
+      "id": "code-simplification--rationalization-2",
+      "skill": "code-simplification",
+      "type": "rationalization",
+      "x": "\"Fewer lines is always simpler\"\n\nA 1-line nested ternary is not simpler than a 5-line if/else. Simplicity is about comprehension speed, not line count.",
+      "linkedin": "\"Fewer lines is always simpler\"\n\nA 1-line nested ternary is not simpler than a 5-line if/else. Simplicity is about comprehension speed, not line count.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-09",
+      "id": "observability-and-instrumentation--rationalization-2",
+      "skill": "observability-and-instrumentation",
+      "type": "rationalization",
+      "x": "\"More logs = more observability\"\n\nUnstructured noise makes incidents slower, not faster. Three queryable events beat three hundred prose lines.",
+      "linkedin": "\"More logs = more observability\"\n\nUnstructured noise makes incidents slower, not faster. Three queryable events beat three hundred prose lines.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-12",
+      "id": "spec-driven-development--rationalization-2",
+      "skill": "spec-driven-development",
+      "type": "rationalization",
+      "x": "\"I'll write the spec after I code it\"\n\nThat's documentation, not specification. The spec's value is in forcing clarity *before* code.",
+      "linkedin": "\"I'll write the spec after I code it\"\n\nThat's documentation, not specification. The spec's value is in forcing clarity *before* code.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-13",
+      "id": "test-driven-development--rationalization-2",
+      "skill": "test-driven-development",
+      "type": "rationalization",
+      "x": "\"This is too simple to test\"\n\nSimple code gets complicated. The test documents the expected behavior.",
+      "linkedin": "\"This is too simple to test\"\n\nSimple code gets complicated. The test documents the expected behavior.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-14",
+      "id": "incremental-implementation--rationalization-2",
+      "skill": "incremental-implementation",
+      "type": "rationalization",
+      "x": "\"It's faster to do it all at once\"\n\nIt *feels* faster until something breaks and you can't find which of 500 changed lines caused it.",
+      "linkedin": "\"It's faster to do it all at once\"\n\nIt *feels* faster until something breaks and you can't find which of 500 changed lines caused it.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-15",
+      "id": "source-driven-development--rationalization-2",
+      "skill": "source-driven-development",
+      "type": "rationalization",
+      "x": "\"Fetching docs wastes tokens\"\n\nHallucinating an API wastes more. The user debugs for an hour, then discovers the function signature changed. One fetch prevents hours of rework.",
+      "linkedin": "\"Fetching docs wastes tokens\"\n\nHallucinating an API wastes more. The user debugs for an hour, then discovers the function signature changed. One fetch prevents hours of rework.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-16",
+      "id": "ci-cd-and-automation--rationalization-2",
+      "skill": "ci-cd-and-automation",
+      "type": "rationalization",
+      "x": "\"This change is trivial, skip CI\"\n\nTrivial changes break builds. CI is fast for trivial changes anyway.",
+      "linkedin": "\"This change is trivial, skip CI\"\n\nTrivial changes break builds. CI is fast for trivial changes anyway.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-19",
+      "id": "debugging-and-error-recovery--rationalization-2",
+      "skill": "debugging-and-error-recovery",
+      "type": "rationalization",
+      "x": "\"The failing test is probably wrong\"\n\nVerify that assumption. If the test is wrong, fix the test. Don't just skip it.",
+      "linkedin": "\"The failing test is probably wrong\"\n\nVerify that assumption. If the test is wrong, fix the test. Don't just skip it.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-20",
+      "id": "documentation-and-adrs--rationalization-2",
+      "skill": "documentation-and-adrs",
+      "type": "rationalization",
+      "x": "\"We'll write docs when the API stabilizes\"\n\nAPIs stabilize faster when you document them. The doc is the first test of the design.",
+      "linkedin": "\"We'll write docs when the API stabilizes\"\n\nAPIs stabilize faster when you document them. The doc is the first test of the design.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-21",
+      "id": "frontend-ui-engineering--rationalization-2",
+      "skill": "frontend-ui-engineering",
+      "type": "rationalization",
+      "x": "\"We'll make it responsive later\"\n\nRetrofitting responsive design is 3x harder than building it from the start.",
+      "linkedin": "\"We'll make it responsive later\"\n\nRetrofitting responsive design is 3x harder than building it from the start.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-22",
+      "id": "shipping-and-launch--rationalization-2",
+      "skill": "shipping-and-launch",
+      "type": "rationalization",
+      "x": "\"We don't need feature flags for this\"\n\nEvery feature benefits from a kill switch. Even \"simple\" changes can break things.",
+      "linkedin": "\"We don't need feature flags for this\"\n\nEvery feature benefits from a kill switch. Even \"simple\" changes can break things.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-23",
+      "id": "context-engineering--rationalization-2",
+      "skill": "context-engineering",
+      "type": "rationalization",
+      "x": "\"I'll just correct it when it goes wrong\"\n\nPrevention is cheaper than correction. Upfront context prevents drift.",
+      "linkedin": "\"I'll just correct it when it goes wrong\"\n\nPrevention is cheaper than correction. Upfront context prevents drift.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-26",
+      "id": "planning-and-task-breakdown--rationalization-2",
+      "skill": "planning-and-task-breakdown",
+      "type": "rationalization",
+      "x": "\"The tasks are obvious\"\n\nWrite them down anyway. Explicit tasks surface hidden dependencies and forgotten edge cases.",
+      "linkedin": "\"The tasks are obvious\"\n\nWrite them down anyway. Explicit tasks surface hidden dependencies and forgotten edge cases.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-27",
+      "id": "security-and-hardening--rationalization-3",
+      "skill": "security-and-hardening",
+      "type": "rationalization",
+      "x": "\"No one would try to exploit this\"\n\nAutomated scanners will find it. Security by obscurity is not security.",
+      "linkedin": "\"No one would try to exploit this\"\n\nAutomated scanners will find it. Security by obscurity is not security.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-28",
+      "id": "api-and-interface-design--rationalization-3",
+      "skill": "api-and-interface-design",
+      "type": "rationalization",
+      "x": "\"PATCH is complicated, let's just use PUT\"\n\nPUT requires the full object every time. PATCH is what clients actually want.",
+      "linkedin": "\"PATCH is complicated, let's just use PUT\"\n\nPUT requires the full object every time. PATCH is what clients actually want.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-29",
+      "id": "code-review-and-quality--rationalization-3",
+      "skill": "code-review-and-quality",
+      "type": "rationalization",
+      "x": "\"We'll clean it up later\"\n\nLater never comes. The review is the quality gate — use it. Require cleanup before merge, not after.",
+      "linkedin": "\"We'll clean it up later\"\n\nLater never comes. The review is the quality gate — use it. Require cleanup before merge, not after.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-10-30",
+      "id": "deprecation-and-migration--rationalization-3",
+      "skill": "deprecation-and-migration",
+      "type": "rationalization",
+      "x": "\"The migration is too expensive\"\n\nCompare migration cost to ongoing maintenance cost over 2-3 years. Migration is usually cheaper long-term.",
+      "linkedin": "\"The migration is too expensive\"\n\nCompare migration cost to ongoing maintenance cost over 2-3 years. Migration is usually cheaper long-term.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-11-02",
+      "id": "doubt-driven-development--rationalization-3",
+      "skill": "doubt-driven-development",
+      "type": "rationalization",
+      "x": "\"The reviewer will just nitpick\"\n\nOnly if unscoped. Constrain the prompt to \"issues that would make this fail under the contract.\"",
+      "linkedin": "\"The reviewer will just nitpick\"\n\nOnly if unscoped. Constrain the prompt to \"issues that would make this fail under the contract.\"\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-11-03",
+      "id": "git-workflow-and-versioning--rationalization-3",
+      "skill": "git-workflow-and-versioning",
+      "type": "rationalization",
+      "x": "\"I'll squash it all later\"\n\nSquashing destroys the development narrative. Prefer clean incremental commits from the start.",
+      "linkedin": "\"I'll squash it all later\"\n\nSquashing destroys the development narrative. Prefer clean incremental commits from the start.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-11-04",
+      "id": "interview-me--rationalization-3",
+      "skill": "interview-me",
+      "type": "rationalization",
+      "x": "\"I'll figure it out as I build\"\n\nSwitching costs after code exists are 10x what they are now. Discovery during implementation is rework.",
+      "linkedin": "\"I'll figure it out as I build\"\n\nSwitching costs after code exists are 10x what they are now. Discovery during implementation is rework.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-11-05",
+      "id": "performance-optimization--rationalization-3",
+      "skill": "performance-optimization",
+      "type": "rationalization",
+      "x": "\"This optimization is obvious\"\n\nIf you didn't measure, you don't know. Profile first.",
+      "linkedin": "\"This optimization is obvious\"\n\nIf you didn't measure, you don't know. Profile first.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-11-06",
+      "id": "browser-testing-with-devtools--rationalization-3",
+      "skill": "browser-testing-with-devtools",
+      "type": "rationalization",
+      "x": "\"I'll check the browser manually later\"\n\nDevTools MCP lets the agent verify now, in the same session, automatically.",
+      "linkedin": "\"I'll check the browser manually later\"\n\nDevTools MCP lets the agent verify now, in the same session, automatically.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-11-09",
+      "id": "code-simplification--rationalization-3",
+      "skill": "code-simplification",
+      "type": "rationalization",
+      "x": "\"I'll just quickly simplify this unrelated code too\"\n\nUnscoped simplification creates noisy diffs and risks regressions in code you didn't intend to change. Stay focused.",
+      "linkedin": "\"I'll just quickly simplify this unrelated code too\"\n\nUnscoped simplification creates noisy diffs and risks regressions in code you didn't intend to change. Stay focused.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-11-10",
+      "id": "observability-and-instrumentation--rationalization-3",
+      "skill": "observability-and-instrumentation",
+      "type": "rationalization",
+      "x": "\"console.log is fine for now\"\n\nUnstructured output can't be filtered, correlated, or alerted on. The structured logger costs five extra minutes once.",
+      "linkedin": "\"console.log is fine for now\"\n\nUnstructured output can't be filtered, correlated, or alerted on. The structured logger costs five extra minutes once.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-11-11",
+      "id": "spec-driven-development--rationalization-3",
+      "skill": "spec-driven-development",
+      "type": "rationalization",
+      "x": "\"The spec will slow us down\"\n\nA 15-minute spec prevents hours of rework. Waterfall in 15 minutes beats debugging in 15 hours.",
+      "linkedin": "\"The spec will slow us down\"\n\nA 15-minute spec prevents hours of rework. Waterfall in 15 minutes beats debugging in 15 hours.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-11-12",
+      "id": "test-driven-development--rationalization-3",
+      "skill": "test-driven-development",
+      "type": "rationalization",
+      "x": "\"Tests slow me down\"\n\nTests slow you down now. They speed you up every time you change the code later.",
+      "linkedin": "\"Tests slow me down\"\n\nTests slow you down now. They speed you up every time you change the code later.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-11-13",
+      "id": "incremental-implementation--rationalization-3",
+      "skill": "incremental-implementation",
+      "type": "rationalization",
+      "x": "\"These changes are too small to commit separately\"\n\nSmall commits are free. Large commits hide bugs and make rollbacks painful.",
+      "linkedin": "\"These changes are too small to commit separately\"\n\nSmall commits are free. Large commits hide bugs and make rollbacks painful.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-11-16",
+      "id": "source-driven-development--rationalization-3",
+      "skill": "source-driven-development",
+      "type": "rationalization",
+      "x": "\"The docs won't have what I need\"\n\nIf the docs don't cover it, that's valuable information — the pattern may not be officially recommended.",
+      "linkedin": "\"The docs won't have what I need\"\n\nIf the docs don't cover it, that's valuable information — the pattern may not be officially recommended.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    },
+    {
+      "date": "2026-11-17",
+      "id": "ci-cd-and-automation--rationalization-3",
+      "skill": "ci-cd-and-automation",
+      "type": "rationalization",
+      "x": "\"The test is flaky, just re-run\"\n\nFlaky tests mask real bugs and waste everyone's time. Fix the flakiness.",
+      "linkedin": "\"The test is flaky, just re-run\"\n\nFlaky tests mask real bugs and waste everyone's time. Fix the flakiness.\n\nOne of 153 rationalizations we catalogued across 24 engineering disciplines."
+    }
+  ]
+}

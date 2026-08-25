@@ -3,6 +3,8 @@ issue: 001
 title: "The Later Tax"
 subtitle: "15 of 24 engineering disciplines independently name the same failure mode"
 status: DRAFT — awaiting human approval before send
+byline: brand (editorial voice, no personhood claim)
+brand: The Later Tax (working name — see business/brand.json)
 audience: engineers and eng leaders using AI coding agents
 target_length: 900 words
 cta: primary
@@ -10,16 +12,16 @@ cta: primary
 
 # The Later Tax
 
-I did something tedious last week so you don't have to.
+We did something tedious last week so you don't have to.
 
-I took 24 engineering disciplines — testing, security, API design, CI, observability,
+We took 24 engineering disciplines — testing, security, API design, CI, observability,
 migrations, performance, code review, the whole lifecycle — and pulled out every
 excuse practitioners actually make. Not strawmen. The real ones, the ones that sound
 reasonable in the moment. 153 of them.
 
-Then I looked for overlap.
+Then we looked for overlap.
 
-I expected the disciplines to fail in their own distinctive ways. Security fails at
+We expected the disciplines to fail in their own distinctive ways. Security fails at
 threat modeling. Performance fails at measurement. Testing fails at coverage. Different
 problems, different fixes.
 
@@ -110,7 +112,7 @@ It's a default. And defaults only change when something makes them expensive.
 
 ---
 
-*Next issue: I ran the same analysis on the other 134 rationalizations. The second-biggest
+*Next issue: we ran the same analysis on the other 134 rationalizations. The second-biggest
 cluster is stranger than this one — it's the excuses that are technically true.*
 
 ---

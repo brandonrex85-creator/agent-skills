@@ -3,7 +3,7 @@
 Operating state for the content business. Read this first every session.
 Keep it short — detail belongs in `journal/`.
 
-_Last updated: 2026-08-25 (run 001)_
+_Last updated: 2026-08-25 (run 002)_
 
 ---
 
@@ -25,7 +25,9 @@ agents. Not AI hype, not generic dev advice — specific, opinionated process.
 | 4 agent personas, 8 commands, 7 checklists | Exists, supporting material |
 | 362 extracted content atoms | Built run 001 — `content/atoms.json` |
 | 12-week distribution calendar | Built run 001 — `content/calendar.md` |
-| Newsletter issue 001 | Drafted run 001, **awaiting approval** |
+| Newsletter issue 001 | Drafted, brand voice, **awaiting approval** |
+| 60 social posts (X + LinkedIn) | Built run 002 — `content/social/posts.md` |
+| Landing page copy | Drafted run 002, **awaiting approval** |
 
 ## Key numbers
 
@@ -42,22 +44,32 @@ There is enough written material for ~17 months of daily posting, and no channel
 post it to. Every hour spent writing new content before a channel exists is an hour
 spent widening a surplus. **Until a channel exists, distribution beats production.**
 
+## Decisions made (run 002)
+
+- **Channel: newsletter + one social.** Newsletter is the owned asset; social is the
+  discovery funnel. Both X and LinkedIn formats are generated, so the specific social
+  platform stays cheap to pick late.
+- **Byline: brand / publication name.** Editorial voice, no personhood claim. Raises
+  throughput — drafting and staging no longer carry impersonation risk.
+
 ## Blocked on human decision
 
-These cannot move without approval — see `inbox/README.md`:
+See `inbox/` for detail:
 
-1. **Channel selection.** Where does this publish? (newsletter platform, X, LinkedIn,
-   blog). Nothing ships until this is answered — it's the single blocking dependency.
-2. **Publishing approval.** Issue 001 is drafted and cannot be sent without sign-off.
-3. **Identity.** Whose byline? Affects voice, and I must not impersonate anyone.
+1. **Publication name.** Working name `The Later Tax`, set in `brand.json`. Three
+   candidates written up; changing it is a one-line edit plus a re-run.
+2. **Account creation.** Newsletter platform and social account. I won't create
+   accounts unattended — closest thing to irreversible in this workflow.
+3. **Publishing approval.** Issue 001, the landing page, and 60 queued social posts are
+   drafted and cannot go out without sign-off. Issue 001 also needs a CTA choice.
 
 ## Next actions (priority order)
 
-1. Get channel decision unblocked — everything else is downstream
-2. On approval: publish issue 001, start the calendar
-3. Draft issues 002–004 (analysis for 002 already scoped: the "technically true"
-   rationalization cluster, 134 atoms unanalyzed)
-4. Build a capture surface (landing page) — no point distributing with nowhere to convert
+1. Get accounts created and the name picked — the only remaining hard blockers
+2. On approval: publish landing page, send issue 001, start the 60-post calendar
+3. Draft issues 002–004 (002 is scoped: the "technically true" cluster, 134 atoms
+   unanalyzed)
+4. Instrument: without subscriber and open-rate numbers, every later decision is a guess
 5. Monetization: hold until audience > 0. No offers to an empty room.
 
 ## Guardrails in force

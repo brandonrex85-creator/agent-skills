@@ -1,0 +1,10 @@
+{
+  "brand": "The Later Tax",
+  "status": "WORKING NAME — not approved. See inbox/2026-08-25-decisions.md",
+  "tagline": "Engineering discipline for people shipping with AI agents.",
+  "voice": "editorial we; no personhood claim; specific over motivational",
+  "channels": {
+    "newsletter": { "platform": "TBD", "status": "not created" },
+    "social": { "platform": "TBD — recommend X", "status": "not created" }
+  }
+}
