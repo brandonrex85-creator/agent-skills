@@ -3,7 +3,7 @@
 Operating state for the content business. Read this first every session.
 Keep it short — detail belongs in `journal/`.
 
-_Last updated: 2026-08-25 (run 003)_
+_Last updated: 2026-08-26 (run 004)_
 
 ---
 
@@ -30,6 +30,9 @@ agents. Not AI hype, not generic dev advice — specific, opinionated process.
 | Landing page copy | Drafted run 002, **awaiting approval** |
 | Newsletter issue 002 | Drafted run 003, **awaiting approval** |
 | Rationalization cluster analysis | Built run 003 — `content/clusters.json` |
+| 14 Instagram carousels / 107 rendered PNGs | Built run 004 — `content/instagram/` |
+| Publish runbook | Built run 004 — `content/PUBLISH-RUNBOOK.md` |
+| 60 X/LinkedIn posts | Built run 002 — **dormant**, no account on those platforms |
 
 ## Key numbers
 
@@ -40,41 +43,45 @@ agents. Not AI hype, not generic dev advice — specific, opinionated process.
   **16 of 24** disciplines. Editorial runway: 4+ more issues, each with a verified finding.
 - Audience: **0** — no list, no channel, no distribution surface yet
 
-## The strategic finding (run 001)
+## The strategic finding (run 001, still holding)
 
 The bottleneck is not content production. It is distribution.
 
-There is enough written material for ~17 months of daily posting, and no channel to
-post it to. Every hour spent writing new content before a channel exists is an hour
-spent widening a surplus. **Until a channel exists, distribution beats production.**
+There is enough written material for ~17 months of daily posting. Channels now exist,
+so the constraint has moved one step downstream: **the constraint is now the beehiiv
+URL**, because it is the only thing standing between 107 rendered slides and a
+conversion path.
 
-## Decisions made (run 002)
+Run 004 addendum: the cluster analysis built for the newsletter turned out to be the
+right unit for Instagram too. A cluster is a carousel theme. Analysis done for one
+channel paid for a second one — worth repeating rather than treating as luck.
 
-- **Channel: newsletter + one social.** Newsletter is the owned asset; social is the
-  discovery funnel. Both X and LinkedIn formats are generated, so the specific social
-  platform stays cheap to pick late.
-- **Byline: brand / publication name.** Editorial voice, no personhood claim. Raises
-  throughput — drafting and staging no longer carry impersonation risk.
+## Settled
 
-## Blocked on human decision
+- **Name: TheLaterTax** ✅ owner-confirmed
+- **Newsletter: beehiiv** ✅ created (admin `app.beehiiv.com`)
+- **Social: Instagram @thelatertax** ✅ created
+- **Byline: brand / publication name** — editorial voice, no personhood claim
 
-See `inbox/` for detail:
+## Blocked on human
 
-1. **Publication name.** Working name `The Later Tax`, set in `brand.json`. Three
-   candidates written up; changing it is a one-line edit plus a re-run.
-2. **Account creation.** Newsletter platform and social account. I won't create
-   accounts unattended — closest thing to irreversible in this workflow.
-3. **Publishing approval.** Issue 001, the landing page, and 60 queued social posts are
-   drafted and cannot go out without sign-off. Issue 001 also needs a CTA choice.
+1. **Public beehiiv URL.** I have the admin address, not the reader-facing one.
+   Instagram allows links only in bio, so without this URL there is no conversion path
+   from Instagram at all. Single highest-value unblock.
+2. **Publishing.** I have no Instagram or beehiiv tooling and posting is outbound to
+   real people. Everything is staged; a human posts it. See `content/PUBLISH-RUNBOOK.md`.
+3. **Issue 001 CTA choice** — three options at the bottom of the draft, my rec is C.
 
 ## Next actions (priority order)
 
-1. Get accounts created and the name picked — the only remaining hard blockers
-2. On approval: publish landing page, send issue 001, start the 60-post calendar
-3. Draft issue 003 (scoped: the "costs more than it returns" cluster — the one that's
-   sometimes right, which makes it the hardest to write well)
-4. Instrument: without subscriber and open-rate numbers, every later decision is a guess
-5. Monetization: hold until audience > 0. No offers to an empty room.
+1. Get the beehiiv public URL, write the Instagram bio, wire the CTAs
+2. Post `false-proxy-1` (better cold-scroll hook than `deferral-1`), then send issue 001
+   once the grid isn't empty
+3. Draft issue 003 (the "costs more than it returns" cluster — hardest of the three,
+   because it is sometimes correct)
+4. Instrument: beehiiv gives open/click rates, Instagram gives saves and reach. Saves
+   matter more than likes for carousels. Without these, every later call is a guess.
+5. Monetization: hold until audience > 0.
 
 ## Standing failure mode — watch for this
 

@@ -1,10 +1,30 @@
 {
-  "brand": "The Later Tax",
-  "status": "WORKING NAME — not approved. See inbox/2026-08-25-decisions.md",
+  "brand": "TheLaterTax",
+  "displayName": "The Later Tax",
+  "status": "APPROVED — name confirmed by owner 2026-08-26",
   "tagline": "Engineering discipline for people shipping with AI agents.",
   "voice": "editorial we; no personhood claim; specific over motivational",
   "channels": {
-    "newsletter": { "platform": "TBD", "status": "not created" },
-    "social": { "platform": "TBD — recommend X", "status": "not created" }
+    "newsletter": {
+      "platform": "beehiiv",
+      "admin": "app.beehiiv.com",
+      "status": "created — publication URL not yet recorded",
+      "note": "public URL needed for the Instagram link-in-bio"
+    },
+    "social": {
+      "platform": "instagram",
+      "handle": "@thelatertax",
+      "status": "created",
+      "note": "visual medium — carousels, not text posts. No clickable links in captions."
+    }
+  },
+  "constraints": {
+    "instagram": {
+      "carouselSlideMax": 20,
+      "slideSize": "1080x1350 (4:5 portrait — occupies more feed height than square)",
+      "captionMax": 2200,
+      "captionPreviewChars": 125,
+      "linksInCaption": false
+    }
   }
 }
