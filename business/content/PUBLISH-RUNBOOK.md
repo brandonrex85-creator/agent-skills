@@ -51,6 +51,9 @@ claim about 16 disciplines. Lead with the paradox.
 **Files:** `content/instagram/slides/false-proxy-1/01.png` … `08.png` — upload in
 filename order.
 
+Use the **PNG** folder for manual posting through the app. `slides-jpeg/` exists only
+for the Content Publishing API, which rejects PNG — see `INTEGRATION.md`.
+
 **Caption:** in `content/instagram/carousels.json` under `false-proxy-1`, or read it
 from `carousels.md`.
 
@@ -115,14 +118,24 @@ the only thing the profile is for.
 
 ---
 
-## 6. Regenerating everything
+## 6. Integrations
+
+See `INTEGRATION.md`. Short version: beehiiv has an official MCP you can add as a custom
+connector (I can't add it for you — it's an account-settings action). Instagram has no
+publishing connector at all; manual posting is the right call until there's an audience
+worth automating for.
+
+---
+
+## 7. Regenerating everything
 
 ```bash
 node business/scripts/extract-content.js          # skills -> atoms
 node business/scripts/build-calendar.js           # atoms -> schedule
 node business/scripts/cluster-rationalizations.js # atoms -> clusters
 node business/scripts/build-instagram.js          # clusters -> carousels + captions
-node business/scripts/render-slides.js            # carousels -> 107 PNGs
+node business/scripts/render-slides.js            # carousels -> 107 PNGs + JPEGs
+node business/scripts/validate-slides.js         # check against Instagram API specs
 ```
 
 Requires `npm install playwright` (Chromium is already on the box).

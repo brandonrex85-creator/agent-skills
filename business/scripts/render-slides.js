@@ -12,6 +12,10 @@
  *     carry that split, not a label.
  *   - No text within 60px of any edge: Instagram crops previews unpredictably.
  *
+ * Emits BOTH formats, because the two publishing paths disagree:
+ *   PNG  — manual upload through the Instagram app. Crisper text.
+ *   JPEG — the Content Publishing API rejects PNG outright, and caps at 8MB.
+ *
  * Usage: node business/scripts/render-slides.js [--carousel <id>] [--limit N]
  */
 
@@ -132,18 +136,22 @@ async function main() {
   let count = 0;
   for (const carousel of carousels) {
     const dir = path.join(IG, 'slides', carousel.id);
+    const jpegDir = path.join(IG, 'slides-jpeg', carousel.id);
     fs.mkdirSync(dir, { recursive: true });
+    fs.mkdirSync(jpegDir, { recursive: true });
     for (const [i, slide] of carousel.slides.entries()) {
       const html = slideHTML(slide, { brand: data.brand, index: i, total: carousel.slides.length }, fontDataUri);
       await page.setContent(html, { waitUntil: 'load' });
       await page.evaluate(() => document.fonts.ready);
-      await page.screenshot({ path: path.join(dir, `${String(i + 1).padStart(2, '0')}.png`) });
+      const stem = String(i + 1).padStart(2, '0');
+      await page.screenshot({ path: path.join(dir, `${stem}.png`) });
+      await page.screenshot({ path: path.join(jpegDir, `${stem}.jpg`), type: 'jpeg', quality: 92 });
       count++;
     }
     console.log(`  ${carousel.id.padEnd(18)} ${carousel.slides.length} slides`);
   }
   await browser.close();
-  console.log(`\nrendered ${count} slides across ${carousels.length} carousels`);
+  console.log(`\nrendered ${count} slides across ${carousels.length} carousels (PNG + JPEG)`);
 }
 
 main().catch((e) => {

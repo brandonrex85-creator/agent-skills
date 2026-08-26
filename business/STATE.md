@@ -3,7 +3,7 @@
 Operating state for the content business. Read this first every session.
 Keep it short — detail belongs in `journal/`.
 
-_Last updated: 2026-08-26 (run 004)_
+_Last updated: 2026-08-26 (run 005)_
 
 ---
 
@@ -32,6 +32,9 @@ agents. Not AI hype, not generic dev advice — specific, opinionated process.
 | Rationalization cluster analysis | Built run 003 — `content/clusters.json` |
 | 14 Instagram carousels / 107 rendered PNGs | Built run 004 — `content/instagram/` |
 | Publish runbook | Built run 004 — `content/PUBLISH-RUNBOOK.md` |
+| 107 JPEG slides (API-format) | Added run 005 — PNG alone would fail API publishing |
+| Instagram spec validator | Built run 005 — `scripts/validate-slides.js` |
+| Integration findings | Built run 005 — `content/INTEGRATION.md` |
 | 60 X/LinkedIn posts | Built run 002 — **dormant**, no account on those platforms |
 
 ## Key numbers
@@ -62,6 +65,19 @@ channel paid for a second one — worth repeating rather than treating as luck.
 - **Newsletter: beehiiv** ✅ created (admin `app.beehiiv.com`)
 - **Social: Instagram @thelatertax** ✅ created
 - **Byline: brand / publication name** — editorial voice, no personhood claim
+
+## Integrations (run 005)
+
+- **beehiiv MCP: exists, official, and I cannot install it.** It's a *custom* connector
+  (added by URL in claude.ai Settings), which is why it never showed in the registry.
+  The URL lives in the owner's beehiiv settings. v2 supports write; a plan gate on
+  publishing is possible and unverified.
+- **Instagram: no publishing connector exists.** Registry has only analytics/ads tools.
+  Real path is Meta's Content Publishing API — Professional account, linked FB Page,
+  Meta app, App Review, *and* public hosting for every image, since the API fetches by
+  URL and does not accept uploads.
+- **Recommendation: do not automate Instagram yet.** Multi-day build to save ~10 min/week
+  for an audience of zero. Revisit at ~1k followers or >1 post/day.
 
 ## Blocked on human
 
