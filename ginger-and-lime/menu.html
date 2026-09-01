@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu &mdash; Ginger &amp; Lime, Palm Harbor</title>
+<meta name="description" content="Bowls, sandwiches, wraps, fresh squeezed juices and smoothies at Ginger & Lime in Palm Harbor, FL. Full menu with prices.">
+<link rel="canonical" href="https://www.gingerandlime.example/menu.html">
+<meta name="theme-color" content="#4C5B43">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ginger &amp; Lime">
+<meta property="og:title" content="Menu &mdash; Ginger &amp; Lime, Palm Harbor">
+<meta property="og:description" content="Bowls, sandwiches, wraps, fresh squeezed juices and smoothies at Ginger & Lime in Palm Harbor, FL. Full menu with prices.">
+<meta property="og:url" content="https://www.gingerandlime.example/menu.html">
+<meta property="og:image" content="https://www.gingerandlime.example/assets/img/sandwich-logo-backdrop.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&amp;family=Karla:wght@400;600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>
+/* Catches missing food photos during parsing so they render as labelled
+   placeholders rather than broken-image icons. */
+window.addEventListener("error", function (event) {
+  var target = event.target;
+  if (target && target.tagName === "IMG" && target.closest(".frame")) {
+    target.closest(".frame").classList.add("is-missing");
+  }
+}, true);
+</script>
+<script src="assets/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="shell site-header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/img/logo-mark.svg" alt="" width="44" height="44">
+      <span class="brand__name">Ginger <span>&amp;</span> Lime
+        <span class="brand__tag">Palm Harbor, FL</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle__bars"><span></span></span> Menu
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+      <li><a class="site-nav__link" href="index.html">Home</a></li>
+      <li><a class="site-nav__link" href="menu.html" aria-current="page">Menu</a></li>
+      <li><a class="site-nav__link" href="gallery.html">Gallery</a></li>
+      <li><a class="site-nav__link" href="about.html">Our Story</a></li>
+      <li><a class="site-nav__link" href="visit.html">Visit</a></li>
+      </ul>
+      <a class="btn btn--sm" href="#order">Order Pickup</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="section section--tint">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">The menu</p>
+      <h1>Made to order, every order</h1>
+      <p class="lede">Bowls and sandwiches built in front of you, juices squeezed when you ask for them. Dietary notes are marked where they apply &mdash; just ask us if you need something adjusted.</p>
+    </div>
+  </div>
+</section>
+<nav class="menu-nav" aria-label="Menu categories">
+  <div class="shell">
+    <ul class="menu-nav__list">
+      <li><a href="#sandwiches">Sandwiches &amp; Wraps</a></li>
+      <li><a href="#bowls">Bowls</a></li>
+      <li><a href="#juices">Fresh Squeezed Juices</a></li>
+      <li><a href="#smoothies">Smoothies</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="shell">
+<section class="menu-section" id="sandwiches" aria-labelledby="sandwiches-heading">
+  <div class="menu-section__head">
+    <h2 id="sandwiches-heading">Sandwiches &amp; Wraps</h2>
+  </div>
+  <p class="menu-section__note">All sandwiches and wraps come with your choice of homemade slaw, homemade pickled cabbage, gluten-free chips, or a fresh apple.</p>
+  <ul class="menu-list">
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Prime Rib Sandwich</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$15</span>
+        </p>
+        <p class="menu-item__desc">In-house slowly cooked thinly sliced prime rib, arugula, tomatoes, red onion, homemade pickled cabbage, gouda cheese, on homemade bread</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Prime Rib Panini</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$15</span>
+        </p>
+        <p class="menu-item__desc">Arugula, tomatoes, red onion, fresh cabbage, gouda cheese, on homemade bread</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Chicken Avocado</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$13</span>
+        </p>
+        <p class="menu-item__desc">In-house cooked chicken, arugula, avocado smash, tomatoes, gouda cheese, on ciabatta bread</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Medi Chicken</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$13</span>
+        </p>
+        <p class="menu-item__desc">Chicken, arugula, in-house made hummus, red pickled onion, feta cheese, sliced grape, red bell pepper sauce, on naan bread</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Chicken Sandwich</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$13</span>
+        </p>
+        <p class="menu-item__desc">In-house cooked chicken, arugula, tomatoes, red onion, red cabbage, mozzarella cheese, chipotle aioli, on homemade bread</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Chicken Wrap</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$13</span>
+        </p>
+        <p class="menu-item__desc">In-house cooked chicken, black beans, rice, pickled cabbage, homemade pico de gallo, arugula, chipotle aioli</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Veggie Wrap</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$12</span>
+        </p>
+        <p class="menu-item__desc">In-house cooked eggplant and zucchini, hummus, pico de gallo, arugula, pickled cabbage, on spinach tortilla</p>
+        <p class="tag-row"><span class="tag tag--warm">Gluten-free wrap +$1</span></p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Artichoke Sandwich</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$12</span>
+        </p>
+        <p class="menu-item__desc">Marinated artichoke with mozzarella cheese on Italian baguette</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Grilled Cheese Panini</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Provolone, mozzarella, and gouda cheese on homemade bread</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Gluten Free Artichoke Wrap</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$13</span>
+        </p>
+        <p class="menu-item__desc">Marinated artichoke, spring mix, eggplant, carrot, pickled cabbage, pico de gallo, hummus</p>
+        <p class="tag-row"><span class="tag">Gluten-free</span></p>
+      </li>
+  </ul>
+</section>
+
+<section class="menu-section" id="bowls" aria-labelledby="bowls-heading">
+  <div class="menu-section__head">
+    <h2 id="bowls-heading">Bowls</h2>
+  </div>
+  <p class="menu-section__note">Built on organic quinoa or rice and finished with house-made hummus, pico de gallo and pickled vegetables.</p>
+  <ul class="menu-list">
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Vegan Heaven Bowl</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$12</span>
+        </p>
+        <p class="menu-item__desc">Organic quinoa or rice, hummus, avocado smash, in-house made pico de gallo, pickled cabbage, black beans, carrots, chia seeds</p>
+        <p class="tag-row"><span class="tag">Gluten-free</span><span class="tag">Vegan</span></p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Eve&rsquo;s Garden Bowl</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$12</span>
+        </p>
+        <p class="menu-item__desc">Organic quinoa or rice, eggplant, zucchini, red bell pepper, hummus, beets, pico de gallo, pickled onion, sesame seeds</p>
+        <p class="tag-row"><span class="tag">Gluten-free</span></p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Southern Chicken Bowl</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$13</span>
+        </p>
+        <p class="menu-item__desc">Chicken breast, black beans, corn, pico de gallo, avocado smash, hummus, crispy onions, edamame, pickled cabbage</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Prime Rib Bowl</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$15</span>
+        </p>
+        <p class="menu-item__desc">Steak, eggplant, red bell pepper, pico de gallo, pickled cabbage, black beans, hummus, crispy onion</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Artichoke Bowl</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$12</span>
+        </p>
+        <p class="menu-item__desc">Marinated artichoke, pico de gallo, hummus, fresh red cabbage, carrots, corn, avocado smash, hemp seed</p>
+      </li>
+  </ul>
+</section>
+
+<section class="menu-section" id="juices" aria-labelledby="juices-heading">
+  <div class="menu-section__head">
+    <h2 id="juices-heading">Fresh Squeezed Juices</h2>
+  </div>
+  <p class="menu-section__note">16 oz. Every juice base is fresh squeezed to order &mdash; nothing from concentrate.</p>
+  <ul class="menu-list">
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Apple or Carrot Juice</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$7</span>
+        </p>
+        <p class="menu-item__desc">Plain apple or plain carrot, fresh squeezed</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Carrot Crush</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Ginger, lime, carrot, apple, agave</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Ginger &amp; Lime</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Ginger, lime, turmeric, beets, mint, agave, black pepper, carrot juice</p>
+        <p class="tag-row"><span class="tag tag--warm">House favorite</span></p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Eve&rsquo;s Apple</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Fresh apple, blueberry, ginger, celery, lime</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Sunshine Squeeze</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Strawberry, apple, mango, lime, agave</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Morning Vibe</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Banana, mango, carrot, beets, ginger, turmeric, black pepper, agave</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Green Glow</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Celery, ginger, lime, basil, agave</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Kids Choice</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Apple, strawberries, agave</p>
+      </li>
+  </ul>
+</section>
+
+<section class="menu-section" id="smoothies" aria-labelledby="smoothies-heading">
+  <div class="menu-section__head">
+    <h2 id="smoothies-heading">Smoothies</h2>
+  </div>
+  <p class="menu-section__note">16 oz. Blended with whole fruit, seeds and coconut water or almond milk.</p>
+  <ul class="menu-list">
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Summer Breeze</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Pineapple, mango, banana, agave, apple juice</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Very Berry</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Strawberry, blueberry, banana, honey, almond milk</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Immune Boost</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Ginger, turmeric, strawberry, banana, honey, black pepper, flax seed, coconut water</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Mango Tango</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Mango, banana, kale, spinach, ginger, almond milk, agave</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Wake Me Up</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Blueberry, mango, spinach, lime, agave, almond milk</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Detox Delight</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Strawberry, beets, mango, kale, agave, coconut water</p>
+      </li>
+      <li class="menu-item">
+        <p class="menu-item__top">
+          <span class="menu-item__name">Keep It Up</span>
+          <span class="menu-item__dots" aria-hidden="true"></span>
+          <span class="menu-item__price">$8</span>
+        </p>
+        <p class="menu-item__desc">Ginger, lime, beets, banana, blueberry, honey, coconut water</p>
+      </li>
+  </ul>
+</section>
+  <p class="callout" style="margin-block:2.5rem">
+    <strong>A note on allergies and swaps.</strong> Nearly everything is prepped in our own kitchen,
+    so we can usually adjust a bowl or wrap for you. Tell us about any allergy when you order and
+    we&rsquo;ll walk you through the options. Prices and availability may change &mdash;
+    <a href="tel:+17272107536">call us at (727) 210-7536</a> if you want to confirm before you come in.
+  </p>
+</div>
+
+<section class="order-band" id="order" aria-labelledby="order-heading">
+  <div class="shell order-band__inner">
+    <div>
+      <h2 id="order-heading">Ready to eat?</h2>
+      <p>Order the whole menu for pickup on DoorDash or UberEats, or call ahead and we&rsquo;ll have it waiting.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="https://www.doordash.com/store/ginger-&amp;-lime-palm-harbor-39839819/94397746/?pickup=true" target="_blank" rel="noopener">Order on DoorDash</a>
+      <a class="btn btn--outline-cream" href="https://www.ubereats.com/store/ginger-%26-lime-30617-us-highway-19-north/ud7Ydc82VFS-LoVvcOB3IQ?diningMode=PICKUP" target="_blank" rel="noopener">Order on UberEats</a>
+      <a class="btn btn--outline-cream" href="tel:+17272107536">Call (727) 210-7536</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img class="brand__mark" src="assets/img/logo-mark.svg" alt="" width="44" height="44">
+          <span class="brand__name">Ginger <span>&amp;</span> Lime
+            <span class="brand__tag">Fresh &middot; Local &middot; Made to order</span>
+          </span>
+        </a>
+        <p style="margin-top:1rem;max-width:34ch">Cold-pressed juices, loaded bowls and
+        house-made sandwiches, served fresh every day in Palm Harbor.</p>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <ul class="footer-list">
+          <li><a href="https://www.google.com/maps/dir/?api=1&amp;destination=30617+US+Hwy+19+N,+Palm+Harbor,+FL+34684" target="_blank" rel="noopener">30617 US Hwy 19 N, Palm Harbor, FL 34684</a></li>
+          <li>In the Seabreeze Shopping Center</li>
+          <li><a href="tel:+17272107536">(727) 210-7536</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Hours</h2>
+        <ul class="footer-list">
+          <li>Monday &ndash; Sunday</li>
+          <li>10:30 AM &ndash; 7:00 PM</li>
+          <li>Open every day</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Follow &amp; order</h2>
+        <ul class="footer-list">
+          <li><a href="https://www.instagram.com/gingerandlimeph/" target="_blank" rel="noopener">Instagram &mdash; @gingerandlimeph</a></li>
+          <li><a href="https://www.facebook.com/people/Ginger-Lime/61574770811508/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.doordash.com/store/ginger-&amp;-lime-palm-harbor-39839819/94397746/?pickup=true" target="_blank" rel="noopener">Order on DoorDash</a></li>
+          <li><a href="https://www.ubereats.com/store/ginger-%26-lime-30617-us-highway-19-north/ud7Ydc82VFS-LoVvcOB3IQ?diningMode=PICKUP" target="_blank" rel="noopener">Order on UberEats</a></li>
+        </ul>
+      </div>
+      <nav aria-label="Footer">
+        <h2>Site</h2>
+        <ul class="footer-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> Ginger &amp; Lime. All rights reserved.</p>
+      <p>Prices and availability may change &mdash; call ahead to confirm.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

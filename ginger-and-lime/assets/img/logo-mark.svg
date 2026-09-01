@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Ginger root and lime slice">
+  <!-- Placeholder mark in the house palette. Replace with the real
+       hand-illustrated ginger + lime artwork once the file is supplied. -->
+  <g stroke="#4C5B43" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 90c-9-7-9-20 1-25 1-11 11-18 21-15 5-7 15-7 20 0 5 7 3 16-4 20-8 5-12 10-15 16-3 5-13 8-23 4z"
+          fill="#E0B183"/>
+    <path d="M42 50c-7-4-8-13-2-18 5-4 13-3 16 3" fill="#E9C39C"/>
+    <g fill="none" stroke-width="2.2" opacity=".8">
+      <path d="M30 66c6 1 11 4 14 9M40 82c4-4 6-9 6-14M22 80c4 0 8 1 11 3"/>
+    </g>
+  </g>
+  <g transform="translate(80 38)">
+    <circle r="31" fill="#9CBB43" stroke="#4C5B43" stroke-width="3.2"/>
+    <circle r="24" fill="#D9E7A6"/>
+    <g fill="#AECB63" stroke="#7C9A32" stroke-width="1.2">
+      <path d="M0 0 20.8 12a24 24 0 0 0 0-24z"/>
+      <path d="M0 0 20.8 12a24 24 0 0 0 0-24z" transform="rotate(60)"/>
+      <path d="M0 0 20.8 12a24 24 0 0 0 0-24z" transform="rotate(120)"/>
+      <path d="M0 0 20.8 12a24 24 0 0 0 0-24z" transform="rotate(180)"/>
+      <path d="M0 0 20.8 12a24 24 0 0 0 0-24z" transform="rotate(240)"/>
+      <path d="M0 0 20.8 12a24 24 0 0 0 0-24z" transform="rotate(300)"/>
+    </g>
+    <circle r="3" fill="#F4F8E4" stroke="#7C9A32" stroke-width="1.2"/>
+  </g>
+</svg>

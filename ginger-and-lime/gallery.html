@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Photo Gallery &mdash; Ginger &amp; Lime, Palm Harbor</title>
+<meta name="description" content="Photos of the bowls, sandwiches, açaí bowls, juices and smoothies made fresh at Ginger & Lime in Palm Harbor, Florida.">
+<link rel="canonical" href="https://www.gingerandlime.example/gallery.html">
+<meta name="theme-color" content="#4C5B43">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ginger &amp; Lime">
+<meta property="og:title" content="Photo Gallery &mdash; Ginger &amp; Lime, Palm Harbor">
+<meta property="og:description" content="Photos of the bowls, sandwiches, açaí bowls, juices and smoothies made fresh at Ginger & Lime in Palm Harbor, Florida.">
+<meta property="og:url" content="https://www.gingerandlime.example/gallery.html">
+<meta property="og:image" content="https://www.gingerandlime.example/assets/img/sandwich-logo-backdrop.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&amp;family=Karla:wght@400;600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script>
+/* Catches missing food photos during parsing so they render as labelled
+   placeholders rather than broken-image icons. */
+window.addEventListener("error", function (event) {
+  var target = event.target;
+  if (target && target.tagName === "IMG" && target.closest(".frame")) {
+    target.closest(".frame").classList.add("is-missing");
+  }
+}, true);
+</script>
+<script src="assets/js/site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="shell site-header__inner">
+    <a class="brand" href="index.html">
+      <img class="brand__mark" src="assets/img/logo-mark.svg" alt="" width="44" height="44">
+      <span class="brand__name">Ginger <span>&amp;</span> Lime
+        <span class="brand__tag">Palm Harbor, FL</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle__bars"><span></span></span> Menu
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+      <li><a class="site-nav__link" href="index.html">Home</a></li>
+      <li><a class="site-nav__link" href="menu.html">Menu</a></li>
+      <li><a class="site-nav__link" href="gallery.html" aria-current="page">Gallery</a></li>
+      <li><a class="site-nav__link" href="about.html">Our Story</a></li>
+      <li><a class="site-nav__link" href="visit.html">Visit</a></li>
+      </ul>
+      <a class="btn btn--sm" href="#order">Order Pickup</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="section section--tint">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow">Gallery</p>
+      <h1>Everything you see, we made today</h1>
+      <p class="lede">No stock photography &mdash; these are our bowls, our bread and our juices, shot on the counter where they were made.</p>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="shell">
+    <div class="gallery">
+      <button class="gallery__item" type="button" data-caption="Prime rib panini on homemade bread">
+        <div class="frame frame--1x1">
+  <img src="assets/img/prime-rib-panini.jpg" alt="Prime rib panini on homemade bread, pressed and sliced in half" loading="lazy" decoding="async">
+  <div class="frame__placeholder" aria-hidden="true">
+    <span>Photo coming soon</span>
+    <code>assets/img/prime-rib-panini.jpg</code>
+  </div>
+</div>
+        <span class="gallery__caption">Prime rib panini on homemade bread</span>
+      </button>
+      <button class="gallery__item" type="button" data-caption="A bowl built to order">
+        <div class="frame frame--1x1">
+  <img src="assets/img/poke-bowl-1.jpg" alt="Colourful grain bowl with avocado, pickled cabbage, corn and greens" loading="lazy" decoding="async">
+  <div class="frame__placeholder" aria-hidden="true">
+    <span>Photo coming soon</span>
+    <code>assets/img/poke-bowl-1.jpg</code>
+  </div>
+</div>
+        <span class="gallery__caption">A bowl built to order</span>
+      </button>
+      <button class="gallery__item" type="button" data-caption="Açaí, fruit and seeds">
+        <div class="frame frame--1x1">
+  <img src="assets/img/acai-bowl-1.jpg" alt="Açaí bowl topped with fresh fruit, granola and seeds" loading="lazy" decoding="async">
+  <div class="frame__placeholder" aria-hidden="true">
+    <span>Photo coming soon</span>
+    <code>assets/img/acai-bowl-1.jpg</code>
+  </div>
+</div>
+        <span class="gallery__caption">Açaí, fruit and seeds</span>
+      </button>
+      <button class="gallery__item" type="button" data-caption="Blended fresh, every order">
+        <div class="frame frame--1x1">
+  <img src="assets/img/green-smoothie.jpg" alt="Green smoothie in a clear cup with a fresh mint garnish" loading="lazy" decoding="async">
+  <div class="frame__placeholder" aria-hidden="true">
+    <span>Photo coming soon</span>
+    <code>assets/img/green-smoothie.jpg</code>
+  </div>
+</div>
+        <span class="gallery__caption">Blended fresh, every order</span>
+      </button>
+      <button class="gallery__item" type="button" data-caption="Flatbread with arugula, grapes and feta">
+        <div class="frame frame--1x1">
+  <img src="assets/img/flatbread-arugula-feta.jpg" alt="Flatbread topped with arugula, grapes, feta and a drizzle of dressing" loading="lazy" decoding="async">
+  <div class="frame__placeholder" aria-hidden="true">
+    <span>Photo coming soon</span>
+    <code>assets/img/flatbread-arugula-feta.jpg</code>
+  </div>
+</div>
+        <span class="gallery__caption">Flatbread with arugula, grapes and feta</span>
+      </button>
+      <button class="gallery__item" type="button" data-caption="Hummus, beets and sesame">
+        <div class="frame frame--1x1">
+  <img src="assets/img/poke-bowl-2.jpg" alt="Overhead view of a grain bowl with hummus, beets and sesame seeds" loading="lazy" decoding="async">
+  <div class="frame__placeholder" aria-hidden="true">
+    <span>Photo coming soon</span>
+    <code>assets/img/poke-bowl-2.jpg</code>
+  </div>
+</div>
+        <span class="gallery__caption">Hummus, beets and sesame</span>
+      </button>
+      <button class="gallery__item" type="button" data-caption="Açaí bowl with a fresh juice">
+        <div class="frame frame--1x1">
+  <img src="assets/img/acai-bowl-2.jpg" alt="Açaí bowl served alongside a fresh juice and a smoothie" loading="lazy" decoding="async">
+  <div class="frame__placeholder" aria-hidden="true">
+    <span>Photo coming soon</span>
+    <code>assets/img/acai-bowl-2.jpg</code>
+  </div>
+</div>
+        <span class="gallery__caption">Açaí bowl with a fresh juice</span>
+      </button>
+      <button class="gallery__item" type="button" data-caption="House-made, start to finish">
+        <div class="frame frame--1x1">
+  <img src="assets/img/sandwich-logo-backdrop.jpg" alt="House sandwich plated in front of the Ginger and Lime logo sign" loading="lazy" decoding="async">
+  <div class="frame__placeholder" aria-hidden="true">
+    <span>Photo coming soon</span>
+    <code>assets/img/sandwich-logo-backdrop.jpg</code>
+  </div>
+</div>
+        <span class="gallery__caption">House-made, start to finish</span>
+      </button>
+    </div>
+    <p class="callout" style="margin-top:2.5rem">
+      Follow <a href="https://www.instagram.com/gingerandlimeph/" target="_blank" rel="noopener">@gingerandlimeph</a> on Instagram
+      for the specials that never make it onto the menu board.
+    </p>
+  </div>
+</section>
+
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox__btn lightbox__close" type="button" data-lightbox="close" aria-label="Close photo viewer">&times;</button>
+  <button class="lightbox__btn lightbox__btn--prev" type="button" data-lightbox="prev" aria-label="Previous photo">&#8249;</button>
+  <figure class="lightbox__figure">
+    <img src="" alt="">
+    <figcaption></figcaption>
+  </figure>
+  <button class="lightbox__btn lightbox__btn--next" type="button" data-lightbox="next" aria-label="Next photo">&#8250;</button>
+</div>
+
+<section class="order-band" id="order" aria-labelledby="order-heading">
+  <div class="shell order-band__inner">
+    <div>
+      <h2 id="order-heading">Order pickup for today</h2>
+      <p>Skip the wait — order ahead on DoorDash or UberEats and pick it up fresh at the counter. Prefer to call it in? We&rsquo;re happy to take your order by phone.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="https://www.doordash.com/store/ginger-&amp;-lime-palm-harbor-39839819/94397746/?pickup=true" target="_blank" rel="noopener">Order on DoorDash</a>
+      <a class="btn btn--outline-cream" href="https://www.ubereats.com/store/ginger-%26-lime-30617-us-highway-19-north/ud7Ydc82VFS-LoVvcOB3IQ?diningMode=PICKUP" target="_blank" rel="noopener">Order on UberEats</a>
+      <a class="btn btn--outline-cream" href="tel:+17272107536">Call (727) 210-7536</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img class="brand__mark" src="assets/img/logo-mark.svg" alt="" width="44" height="44">
+          <span class="brand__name">Ginger <span>&amp;</span> Lime
+            <span class="brand__tag">Fresh &middot; Local &middot; Made to order</span>
+          </span>
+        </a>
+        <p style="margin-top:1rem;max-width:34ch">Cold-pressed juices, loaded bowls and
+        house-made sandwiches, served fresh every day in Palm Harbor.</p>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <ul class="footer-list">
+          <li><a href="https://www.google.com/maps/dir/?api=1&amp;destination=30617+US+Hwy+19+N,+Palm+Harbor,+FL+34684" target="_blank" rel="noopener">30617 US Hwy 19 N, Palm Harbor, FL 34684</a></li>
+          <li>In the Seabreeze Shopping Center</li>
+          <li><a href="tel:+17272107536">(727) 210-7536</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Hours</h2>
+        <ul class="footer-list">
+          <li>Monday &ndash; Sunday</li>
+          <li>10:30 AM &ndash; 7:00 PM</li>
+          <li>Open every day</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Follow &amp; order</h2>
+        <ul class="footer-list">
+          <li><a href="https://www.instagram.com/gingerandlimeph/" target="_blank" rel="noopener">Instagram &mdash; @gingerandlimeph</a></li>
+          <li><a href="https://www.facebook.com/people/Ginger-Lime/61574770811508/" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.doordash.com/store/ginger-&amp;-lime-palm-harbor-39839819/94397746/?pickup=true" target="_blank" rel="noopener">Order on DoorDash</a></li>
+          <li><a href="https://www.ubereats.com/store/ginger-%26-lime-30617-us-highway-19-north/ud7Ydc82VFS-LoVvcOB3IQ?diningMode=PICKUP" target="_blank" rel="noopener">Order on UberEats</a></li>
+        </ul>
+      </div>
+      <nav aria-label="Footer">
+        <h2>Site</h2>
+        <ul class="footer-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">Our Story</a></li>
+        <li><a href="visit.html">Visit</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year>2026</span> Ginger &amp; Lime. All rights reserved.</p>
+      <p>Prices and availability may change &mdash; call ahead to confirm.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
