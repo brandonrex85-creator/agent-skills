@@ -1,0 +1,549 @@
+{
+  "generatedAt": "2026-09-05T18:50:48.313Z",
+  "start": "2026-09-07",
+  "weeks": 12,
+  "postsScheduled": 60,
+  "atomsRemaining": 329,
+  "schedule": [
+    {
+      "date": "2026-09-07",
+      "id": "performance-optimization--rationalization-1",
+      "skill": "performance-optimization",
+      "type": "rationalization",
+      "hook": "\"We'll optimize later\"",
+      "payoff": "Performance debt compounds. Fix obvious anti-patterns now, defer micro-optimizations.",
+      "chars": 107
+    },
+    {
+      "date": "2026-09-08",
+      "id": "security-and-hardening--rationalization-1",
+      "skill": "security-and-hardening",
+      "type": "rationalization",
+      "hook": "\"This is an internal tool, security doesn't matter\"",
+      "payoff": "Internal tools get compromised. Attackers target the weakest link.",
+      "chars": 117
+    },
+    {
+      "date": "2026-09-09",
+      "id": "api-and-interface-design--rationalization-1",
+      "skill": "api-and-interface-design",
+      "type": "rationalization",
+      "hook": "\"We'll document the API later\"",
+      "payoff": "The types ARE the documentation. Define them first.",
+      "chars": 81
+    },
+    {
+      "date": "2026-09-10",
+      "id": "code-review-and-quality--rationalization-1",
+      "skill": "code-review-and-quality",
+      "type": "rationalization",
+      "hook": "\"It works, that's good enough\"",
+      "payoff": "Working code that's unreadable, insecure, or architecturally wrong creates debt that compounds.",
+      "chars": 125
+    },
+    {
+      "date": "2026-09-11",
+      "id": "deprecation-and-migration--rationalization-1",
+      "skill": "deprecation-and-migration",
+      "type": "rationalization",
+      "hook": "\"It still works, why remove it?\"",
+      "payoff": "Working code that nobody maintains accumulates security debt and complexity. Maintenance cost grows silently.",
+      "chars": 141
+    },
+    {
+      "date": "2026-09-14",
+      "id": "doubt-driven-development--rationalization-1",
+      "skill": "doubt-driven-development",
+      "type": "rationalization",
+      "hook": "\"I'm confident, skip the doubt step\"",
+      "payoff": "Confidence correlates poorly with correctness on novel problems. Moments of certainty are exactly when blind spots hide.",
+      "chars": 156
+    },
+    {
+      "date": "2026-09-15",
+      "id": "git-workflow-and-versioning--rationalization-1",
+      "skill": "git-workflow-and-versioning",
+      "type": "rationalization",
+      "hook": "\"I'll commit when the feature is done\"",
+      "payoff": "One giant commit is impossible to review, debug, or revert. Commit each slice.",
+      "chars": 116
+    },
+    {
+      "date": "2026-09-16",
+      "id": "interview-me--rationalization-1",
+      "skill": "interview-me",
+      "type": "rationalization",
+      "hook": "\"The ask is clear enough\"",
+      "payoff": "If you can't write the user's desired outcome in one sentence right now, the ask isn't clear. Run Step 1 before deciding.",
+      "chars": 146
+    },
+    {
+      "date": "2026-09-17",
+      "id": "browser-testing-with-devtools--rationalization-1",
+      "skill": "browser-testing-with-devtools",
+      "type": "rationalization",
+      "hook": "\"It looks right in my mental model\"",
+      "payoff": "Runtime behavior regularly differs from what code suggests. Verify with actual browser state.",
+      "chars": 128
+    },
+    {
+      "date": "2026-09-18",
+      "id": "code-simplification--rationalization-1",
+      "skill": "code-simplification",
+      "type": "rationalization",
+      "hook": "\"It's working, no need to touch it\"",
+      "payoff": "Working code that's hard to read will be hard to fix when it breaks. Simplifying now saves time on every future change.",
+      "chars": 154
+    },
+    {
+      "date": "2026-09-21",
+      "id": "observability-and-instrumentation--rationalization-1",
+      "skill": "observability-and-instrumentation",
+      "type": "rationalization",
+      "hook": "\"I'll add logging after it works\"",
+      "payoff": "\"After\" becomes \"after the first incident\", which is the most expensive moment to discover you're blind. Instrument as you build.",
+      "chars": 162
+    },
+    {
+      "date": "2026-09-22",
+      "id": "spec-driven-development--rationalization-1",
+      "skill": "spec-driven-development",
+      "type": "rationalization",
+      "hook": "\"This is simple, I don't need a spec\"",
+      "payoff": "Simple tasks don't need *long* specs, but they still need acceptance criteria. A two-line spec is fine.",
+      "chars": 140
+    },
+    {
+      "date": "2026-09-23",
+      "id": "test-driven-development--rationalization-1",
+      "skill": "test-driven-development",
+      "type": "rationalization",
+      "hook": "\"I'll write tests after the code works\"",
+      "payoff": "You won't. And tests written after the fact test implementation, not behavior.",
+      "chars": 117
+    },
+    {
+      "date": "2026-09-24",
+      "id": "constraint-driven-development--rationalization-1",
+      "skill": "constraint-driven-development",
+      "type": "rationalization",
+      "hook": "\"We'll add constraints once the code settles\"",
+      "payoff": "Code settles around whatever was allowed while it was moving",
+      "chars": 105
+    },
+    {
+      "date": "2026-09-25",
+      "id": "incremental-implementation--rationalization-1",
+      "skill": "incremental-implementation",
+      "type": "rationalization",
+      "hook": "\"I'll test it all at the end\"",
+      "payoff": "Bugs compound. A bug in Slice 1 makes Slices 2-5 wrong. Test each slice.",
+      "chars": 101
+    },
+    {
+      "date": "2026-09-28",
+      "id": "source-driven-development--rationalization-1",
+      "skill": "source-driven-development",
+      "type": "rationalization",
+      "hook": "\"I'm confident about this API\"",
+      "payoff": "Confidence is not evidence. Training data contains outdated patterns that look correct but break against current versions. Verify.",
+      "chars": 160
+    },
+    {
+      "date": "2026-09-29",
+      "id": "ci-cd-and-automation--rationalization-1",
+      "skill": "ci-cd-and-automation",
+      "type": "rationalization",
+      "hook": "\"CI is too slow\"",
+      "payoff": "Optimize the pipeline (see CI Optimization below), don't skip it. A 5-minute pipeline prevents hours of debugging.",
+      "chars": 130
+    },
+    {
+      "date": "2026-09-30",
+      "id": "debugging-and-error-recovery--rationalization-1",
+      "skill": "debugging-and-error-recovery",
+      "type": "rationalization",
+      "hook": "\"I know what the bug is, I'll just fix it\"",
+      "payoff": "You might be right 70% of the time. The other 30% costs hours. Reproduce first.",
+      "chars": 121
+    },
+    {
+      "date": "2026-10-01",
+      "id": "documentation-and-adrs--rationalization-1",
+      "skill": "documentation-and-adrs",
+      "type": "rationalization",
+      "hook": "\"The code is self-documenting\"",
+      "payoff": "Code shows what. It doesn't show why, what alternatives were rejected, or what constraints apply.",
+      "chars": 127
+    },
+    {
+      "date": "2026-10-02",
+      "id": "frontend-ui-engineering--rationalization-1",
+      "skill": "frontend-ui-engineering",
+      "type": "rationalization",
+      "hook": "\"Accessibility is a nice-to-have\"",
+      "payoff": "It's a legal requirement in many jurisdictions and an engineering quality standard.",
+      "chars": 116
+    },
+    {
+      "date": "2026-10-05",
+      "id": "planning-and-task-breakdown--rationalization-1",
+      "skill": "planning-and-task-breakdown",
+      "type": "rationalization",
+      "hook": "\"I'll figure it out as I go\"",
+      "payoff": "That's how you end up with a tangled mess and rework. 10 minutes of planning saves hours.",
+      "chars": 117
+    },
+    {
+      "date": "2026-10-06",
+      "id": "shipping-and-launch--rationalization-1",
+      "skill": "shipping-and-launch",
+      "type": "rationalization",
+      "hook": "\"It works in staging, it'll work in production\"",
+      "payoff": "Production has different data, traffic patterns, and edge cases. Monitor after deploy.",
+      "chars": 133
+    },
+    {
+      "date": "2026-10-07",
+      "id": "context-engineering--rationalization-1",
+      "skill": "context-engineering",
+      "type": "rationalization",
+      "hook": "\"The agent should figure out the conventions\"",
+      "payoff": "It can't read your mind. Write a rules file — 10 minutes that saves hours.",
+      "chars": 119
+    },
+    {
+      "date": "2026-10-08",
+      "id": "performance-optimization--rationalization-2",
+      "skill": "performance-optimization",
+      "type": "rationalization",
+      "hook": "\"It's fast on my machine\"",
+      "payoff": "Your machine isn't the user's. Profile on representative hardware and networks.",
+      "chars": 104
+    },
+    {
+      "date": "2026-10-09",
+      "id": "security-and-hardening--rationalization-2",
+      "skill": "security-and-hardening",
+      "type": "rationalization",
+      "hook": "\"We'll add security later\"",
+      "payoff": "Security retrofitting is 10x harder than building it in. Add it now.",
+      "chars": 94
+    },
+    {
+      "date": "2026-10-12",
+      "id": "api-and-interface-design--rationalization-2",
+      "skill": "api-and-interface-design",
+      "type": "rationalization",
+      "hook": "\"We don't need pagination for now\"",
+      "payoff": "You will the moment someone has 100+ items. Add it from the start.",
+      "chars": 100
+    },
+    {
+      "date": "2026-10-13",
+      "id": "code-review-and-quality--rationalization-2",
+      "skill": "code-review-and-quality",
+      "type": "rationalization",
+      "hook": "\"I wrote it, so I know it's correct\"",
+      "payoff": "Authors are blind to their own assumptions. Every change benefits from another set of eyes.",
+      "chars": 127
+    },
+    {
+      "date": "2026-10-14",
+      "id": "deprecation-and-migration--rationalization-2",
+      "skill": "deprecation-and-migration",
+      "type": "rationalization",
+      "hook": "\"Someone might need it later\"",
+      "payoff": "If it's needed later, it can be rebuilt. Keeping unused code \"just in case\" costs more than rebuilding.",
+      "chars": 132
+    },
+    {
+      "date": "2026-10-15",
+      "id": "doubt-driven-development--rationalization-2",
+      "skill": "doubt-driven-development",
+      "type": "rationalization",
+      "hook": "\"Spawning a reviewer is expensive\"",
+      "payoff": "Debugging a wrong commit in production is more expensive. The check is bounded; the bug isn't.",
+      "chars": 128
+    },
+    {
+      "date": "2026-10-16",
+      "id": "git-workflow-and-versioning--rationalization-2",
+      "skill": "git-workflow-and-versioning",
+      "type": "rationalization",
+      "hook": "\"The message doesn't matter\"",
+      "payoff": "Messages are documentation. Future you (and future agents) will need to understand what changed and why.",
+      "chars": 132
+    },
+    {
+      "date": "2026-10-19",
+      "id": "interview-me--rationalization-2",
+      "skill": "interview-me",
+      "type": "rationalization",
+      "hook": "\"Asking too many questions wastes their time\"",
+      "payoff": "Time wasted by 4–6 targeted questions is small. Time wasted by building the wrong thing is enormous, and the user is the one bearing that cost.",
+      "chars": 188
+    },
+    {
+      "date": "2026-10-20",
+      "id": "browser-testing-with-devtools--rationalization-2",
+      "skill": "browser-testing-with-devtools",
+      "type": "rationalization",
+      "hook": "\"Console warnings are fine\"",
+      "payoff": "Warnings become errors. Clean consoles catch bugs early.",
+      "chars": 83
+    },
+    {
+      "date": "2026-10-21",
+      "id": "code-simplification--rationalization-2",
+      "skill": "code-simplification",
+      "type": "rationalization",
+      "hook": "\"Fewer lines is always simpler\"",
+      "payoff": "A 1-line nested ternary is not simpler than a 5-line if/else. Simplicity is about comprehension speed, not line count.",
+      "chars": 149
+    },
+    {
+      "date": "2026-10-22",
+      "id": "observability-and-instrumentation--rationalization-2",
+      "skill": "observability-and-instrumentation",
+      "type": "rationalization",
+      "hook": "\"More logs = more observability\"",
+      "payoff": "Unstructured noise makes incidents slower, not faster. Three queryable events beat three hundred prose lines.",
+      "chars": 141
+    },
+    {
+      "date": "2026-10-23",
+      "id": "spec-driven-development--rationalization-2",
+      "skill": "spec-driven-development",
+      "type": "rationalization",
+      "hook": "\"I'll write the spec after I code it\"",
+      "payoff": "That's documentation, not specification. The spec's value is in forcing clarity *before* code.",
+      "chars": 131
+    },
+    {
+      "date": "2026-10-26",
+      "id": "test-driven-development--rationalization-2",
+      "skill": "test-driven-development",
+      "type": "rationalization",
+      "hook": "\"This is too simple to test\"",
+      "payoff": "Simple code gets complicated. The test documents the expected behavior.",
+      "chars": 99
+    },
+    {
+      "date": "2026-10-27",
+      "id": "constraint-driven-development--rationalization-2",
+      "skill": "constraint-driven-development",
+      "type": "rationalization",
+      "hook": "\"The tests are the constraints\"",
+      "payoff": "Tests you wrote prove you agree with yourself; they say nothing about coverage of new code, dependency risk, or bundle growth",
+      "chars": 156
+    },
+    {
+      "date": "2026-10-28",
+      "id": "incremental-implementation--rationalization-2",
+      "skill": "incremental-implementation",
+      "type": "rationalization",
+      "hook": "\"It's faster to do it all at once\"",
+      "payoff": "It *feels* faster until something breaks and you can't find which of 500 changed lines caused it.",
+      "chars": 131
+    },
+    {
+      "date": "2026-10-29",
+      "id": "source-driven-development--rationalization-2",
+      "skill": "source-driven-development",
+      "type": "rationalization",
+      "hook": "\"Fetching docs wastes tokens\"",
+      "payoff": "Hallucinating an API wastes more. The user debugs for an hour, then discovers the function signature changed. One fetch prevents hours of rework.",
+      "chars": 174
+    },
+    {
+      "date": "2026-10-30",
+      "id": "ci-cd-and-automation--rationalization-2",
+      "skill": "ci-cd-and-automation",
+      "type": "rationalization",
+      "hook": "\"This change is trivial, skip CI\"",
+      "payoff": "Trivial changes break builds. CI is fast for trivial changes anyway.",
+      "chars": 101
+    },
+    {
+      "date": "2026-11-02",
+      "id": "debugging-and-error-recovery--rationalization-2",
+      "skill": "debugging-and-error-recovery",
+      "type": "rationalization",
+      "hook": "\"The failing test is probably wrong\"",
+      "payoff": "Verify that assumption. If the test is wrong, fix the test. Don't just skip it.",
+      "chars": 115
+    },
+    {
+      "date": "2026-11-03",
+      "id": "documentation-and-adrs--rationalization-2",
+      "skill": "documentation-and-adrs",
+      "type": "rationalization",
+      "hook": "\"We'll write docs when the API stabilizes\"",
+      "payoff": "APIs stabilize faster when you document them. The doc is the first test of the design.",
+      "chars": 128
+    },
+    {
+      "date": "2026-11-04",
+      "id": "frontend-ui-engineering--rationalization-2",
+      "skill": "frontend-ui-engineering",
+      "type": "rationalization",
+      "hook": "\"We'll make it responsive later\"",
+      "payoff": "Retrofitting responsive design is 3x harder than building it from the start.",
+      "chars": 108
+    },
+    {
+      "date": "2026-11-05",
+      "id": "planning-and-task-breakdown--rationalization-2",
+      "skill": "planning-and-task-breakdown",
+      "type": "rationalization",
+      "hook": "\"The tasks are obvious\"",
+      "payoff": "Write them down anyway. Explicit tasks surface hidden dependencies and forgotten edge cases.",
+      "chars": 115
+    },
+    {
+      "date": "2026-11-06",
+      "id": "shipping-and-launch--rationalization-2",
+      "skill": "shipping-and-launch",
+      "type": "rationalization",
+      "hook": "\"We don't need feature flags for this\"",
+      "payoff": "Every feature benefits from a kill switch. Even \"simple\" changes can break things.",
+      "chars": 120
+    },
+    {
+      "date": "2026-11-09",
+      "id": "context-engineering--rationalization-2",
+      "skill": "context-engineering",
+      "type": "rationalization",
+      "hook": "\"I'll just correct it when it goes wrong\"",
+      "payoff": "Prevention is cheaper than correction. Upfront context prevents drift.",
+      "chars": 111
+    },
+    {
+      "date": "2026-11-10",
+      "id": "performance-optimization--rationalization-3",
+      "skill": "performance-optimization",
+      "type": "rationalization",
+      "hook": "\"This optimization is obvious\"",
+      "payoff": "If you didn't measure, you don't know. Profile first.",
+      "chars": 83
+    },
+    {
+      "date": "2026-11-11",
+      "id": "security-and-hardening--rationalization-3",
+      "skill": "security-and-hardening",
+      "type": "rationalization",
+      "hook": "\"No one would try to exploit this\"",
+      "payoff": "Automated scanners will find it. Security by obscurity is not security.",
+      "chars": 105
+    },
+    {
+      "date": "2026-11-12",
+      "id": "api-and-interface-design--rationalization-3",
+      "skill": "api-and-interface-design",
+      "type": "rationalization",
+      "hook": "\"PATCH is complicated, let's just use PUT\"",
+      "payoff": "PUT requires the full object every time. PATCH is what clients actually want.",
+      "chars": 119
+    },
+    {
+      "date": "2026-11-13",
+      "id": "code-review-and-quality--rationalization-3",
+      "skill": "code-review-and-quality",
+      "type": "rationalization",
+      "hook": "\"We'll clean it up later\"",
+      "payoff": "Later never comes. The review is the quality gate — use it. Require cleanup before merge, not after.",
+      "chars": 125
+    },
+    {
+      "date": "2026-11-16",
+      "id": "deprecation-and-migration--rationalization-3",
+      "skill": "deprecation-and-migration",
+      "type": "rationalization",
+      "hook": "\"The migration is too expensive\"",
+      "payoff": "Compare migration cost to ongoing maintenance cost over 2-3 years. Migration is usually cheaper long-term.",
+      "chars": 138
+    },
+    {
+      "date": "2026-11-17",
+      "id": "doubt-driven-development--rationalization-3",
+      "skill": "doubt-driven-development",
+      "type": "rationalization",
+      "hook": "\"The reviewer will just nitpick\"",
+      "payoff": "Only if unscoped. Constrain the prompt to \"issues that would make this fail under the contract.\"",
+      "chars": 128
+    },
+    {
+      "date": "2026-11-18",
+      "id": "git-workflow-and-versioning--rationalization-3",
+      "skill": "git-workflow-and-versioning",
+      "type": "rationalization",
+      "hook": "\"I'll squash it all later\"",
+      "payoff": "Squashing destroys the development narrative. Prefer clean incremental commits from the start.",
+      "chars": 120
+    },
+    {
+      "date": "2026-11-19",
+      "id": "interview-me--rationalization-3",
+      "skill": "interview-me",
+      "type": "rationalization",
+      "hook": "\"I'll figure it out as I build\"",
+      "payoff": "Switching costs after code exists are 10x what they are now. Discovery during implementation is rework.",
+      "chars": 134
+    },
+    {
+      "date": "2026-11-20",
+      "id": "browser-testing-with-devtools--rationalization-3",
+      "skill": "browser-testing-with-devtools",
+      "type": "rationalization",
+      "hook": "\"I'll check the browser manually later\"",
+      "payoff": "DevTools MCP lets the agent verify now, in the same session, automatically.",
+      "chars": 114
+    },
+    {
+      "date": "2026-11-23",
+      "id": "code-simplification--rationalization-3",
+      "skill": "code-simplification",
+      "type": "rationalization",
+      "hook": "\"I'll just quickly simplify this unrelated code too\"",
+      "payoff": "Unscoped simplification creates noisy diffs and risks regressions in code you didn't intend to change. Stay focused.",
+      "chars": 168
+    },
+    {
+      "date": "2026-11-24",
+      "id": "observability-and-instrumentation--rationalization-3",
+      "skill": "observability-and-instrumentation",
+      "type": "rationalization",
+      "hook": "\"console.log is fine for now\"",
+      "payoff": "Unstructured output can't be filtered, correlated, or alerted on. The structured logger costs five extra minutes once.",
+      "chars": 147
+    },
+    {
+      "date": "2026-11-25",
+      "id": "spec-driven-development--rationalization-3",
+      "skill": "spec-driven-development",
+      "type": "rationalization",
+      "hook": "\"The spec will slow us down\"",
+      "payoff": "A 15-minute spec prevents hours of rework. Waterfall in 15 minutes beats debugging in 15 hours.",
+      "chars": 123
+    },
+    {
+      "date": "2026-11-26",
+      "id": "test-driven-development--rationalization-3",
+      "skill": "test-driven-development",
+      "type": "rationalization",
+      "hook": "\"Tests slow me down\"",
+      "payoff": "Tests slow you down now. They speed you up every time you change the code later.",
+      "chars": 100
+    },
+    {
+      "date": "2026-11-27",
+      "id": "constraint-driven-development--rationalization-3",
+      "skill": "constraint-driven-development",
+      "type": "rationalization",
+      "hook": "\"We can't hit 80% coverage\"",
+      "payoff": "Then don't set 80%. Set today's number and hold it",
+      "chars": 77
+    }
+  ]
+}
