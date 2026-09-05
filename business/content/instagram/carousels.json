@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T18:46:28.334Z",
+  "generatedAt": "2026-09-05T18:50:48.427Z",
   "brand": "TheLaterTax",
   "carousels": [
     {
@@ -9,7 +9,7 @@
       "part": 1,
       "totalParts": 3,
       "slideCount": 8,
-      "caption": "Every \"we'll do it later\" is a loan\n\nWe catalogued 153 excuses engineers actually make, across 24 engineering disciplines.\n\n19 of them share this exact shape — and they show up in 16 separate disciplines that never coordinated with each other.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
+      "caption": "Every \"we'll do it later\" is a loan\n\nWe catalogued 153 excuses engineers actually make, across 24 engineering disciplines.\n\n20 of them share this exact shape — and they show up in 17 separate disciplines that never coordinated with each other.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
       "slides": [
         {
           "kind": "cover",
@@ -43,15 +43,15 @@
         },
         {
           "kind": "atom",
-          "lie": "I'll fix it in the next commit",
-          "reality": "Fix it now. The next commit will introduce new bugs on top of this one.",
-          "source": "debugging & error recovery"
+          "lie": "We'll add constraints once the code settles",
+          "reality": "Code settles around whatever was allowed while it was moving",
+          "source": "constraint driven development"
         },
         {
           "kind": "atom",
-          "lie": "We'll deprecate it after we finish the new system",
-          "reality": "Deprecation planning starts at design time. By the time the new system is done, you'll have new priorities. Plan now.",
-          "source": "deprecation & migration"
+          "lie": "I'll fix it in the next commit",
+          "reality": "Fix it now. The next commit will introduce new bugs on top of this one.",
+          "source": "debugging & error recovery"
         },
         {
           "kind": "cta",
@@ -68,13 +68,19 @@
       "part": 2,
       "totalParts": 3,
       "slideCount": 8,
-      "caption": "Every \"we'll do it later\" is a loan\n\nMore from the same cluster. 19 of the 153 excuses we catalogued share this shape.\n\nPart 2 of 3. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
+      "caption": "Every \"we'll do it later\" is a loan\n\nMore from the same cluster. 20 of the 153 excuses we catalogued share this shape.\n\nPart 2 of 3. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
       "slides": [
         {
           "kind": "cover",
           "title": "Every \"we'll do it later\" is a loan",
           "subtitle": "Nobody is tracking the balance",
           "kicker": "Part 2 of 3"
+        },
+        {
+          "kind": "atom",
+          "lie": "We'll deprecate it after we finish the new system",
+          "reality": "Deprecation planning starts at design time. By the time the new system is done, you'll have new priorities. Plan now.",
+          "source": "deprecation & migration"
         },
         {
           "kind": "atom",
@@ -107,12 +113,6 @@
           "source": "git workflow & versioning"
         },
         {
-          "kind": "atom",
-          "lie": "I'll add the feature flag later",
-          "reality": "If the feature isn't complete, it shouldn't be user-visible. Add the flag now.",
-          "source": "incremental implementation"
-        },
-        {
           "kind": "cta",
           "title": "The full analysis",
           "subtitle": "153 excuses. 24 disciplines. One issue a week.",
@@ -127,13 +127,19 @@
       "part": 3,
       "totalParts": 3,
       "slideCount": 8,
-      "caption": "Every \"we'll do it later\" is a loan\n\nMore from the same cluster. 19 of the 153 excuses we catalogued share this shape.\n\nPart 3 of 3. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
+      "caption": "Every \"we'll do it later\" is a loan\n\nMore from the same cluster. 20 of the 153 excuses we catalogued share this shape.\n\nPart 3 of 3. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
       "slides": [
         {
           "kind": "cover",
           "title": "Every \"we'll do it later\" is a loan",
           "subtitle": "Nobody is tracking the balance",
           "kicker": "Part 3 of 3"
+        },
+        {
+          "kind": "atom",
+          "lie": "I'll add the feature flag later",
+          "reality": "If the feature isn't complete, it shouldn't be user-visible. Add the flag now.",
+          "source": "incremental implementation"
         },
         {
           "kind": "atom",
@@ -166,12 +172,6 @@
           "source": "shipping & launch"
         },
         {
-          "kind": "atom",
-          "lie": "I'll write the spec after I code it",
-          "reality": "That's documentation, not specification. The spec's value is in forcing clarity *before* code.",
-          "source": "spec driven development"
-        },
-        {
           "kind": "cta",
           "title": "The full analysis",
           "subtitle": "153 excuses. 24 disciplines. One issue a week.",
@@ -186,7 +186,7 @@
       "part": 1,
       "totalParts": 3,
       "slideCount": 8,
-      "caption": "\"That's overhead\" — is it though?\n\nWe catalogued 153 excuses engineers actually make, across 24 engineering disciplines.\n\n16 of them share this exact shape — and they show up in 15 separate disciplines that never coordinated with each other.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
+      "caption": "\"That's overhead\" — is it though?\n\nWe catalogued 153 excuses engineers actually make, across 24 engineering disciplines.\n\n18 of them share this exact shape — and they show up in 16 separate disciplines that never coordinated with each other.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
       "slides": [
         {
           "kind": "cover",
@@ -208,6 +208,18 @@
         },
         {
           "kind": "atom",
+          "lie": "This will slow the agent down",
+          "reality": "Only if you put slow checks in the fast loop. That's a placement error, not an argument against constraints",
+          "source": "constraint driven development"
+        },
+        {
+          "kind": "atom",
+          "lie": "Constraints will block us shipping",
+          "reality": "An exception with an owner and a date unblocks you. Deleting the constraint unblocks everyone forever",
+          "source": "constraint driven development"
+        },
+        {
+          "kind": "atom",
           "lie": "The migration is too expensive",
           "reality": "Compare migration cost to ongoing maintenance cost over 2-3 years. Migration is usually cheaper long-term.",
           "source": "deprecation & migration"
@@ -217,18 +229,6 @@
           "lie": "ADRs are overhead",
           "reality": "A 10-minute ADR prevents a 2-hour debate about the same decision six months later.",
           "source": "documentation & adrs"
-        },
-        {
-          "kind": "atom",
-          "lie": "Spawning a reviewer is expensive",
-          "reality": "Debugging a wrong commit in production is more expensive. The check is bounded; the bug isn't.",
-          "source": "doubt driven development"
-        },
-        {
-          "kind": "atom",
-          "lie": "Accessibility is a nice-to-have",
-          "reality": "It's a legal requirement in many jurisdictions and an engineering quality standard.",
-          "source": "frontend ui engineering"
         },
         {
           "kind": "cta",
@@ -245,13 +245,25 @@
       "part": 2,
       "totalParts": 3,
       "slideCount": 8,
-      "caption": "\"That's overhead\" — is it though?\n\nMore from the same cluster. 16 of the 153 excuses we catalogued share this shape.\n\nPart 2 of 3. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
+      "caption": "\"That's overhead\" — is it though?\n\nMore from the same cluster. 18 of the 153 excuses we catalogued share this shape.\n\nPart 2 of 3. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
       "slides": [
         {
           "kind": "cover",
           "title": "\"That's overhead\" — is it though?",
           "subtitle": "Sometimes yes. Usually not for the reason given.",
           "kicker": "Part 2 of 3"
+        },
+        {
+          "kind": "atom",
+          "lie": "Spawning a reviewer is expensive",
+          "reality": "Debugging a wrong commit in production is more expensive. The check is bounded; the bug isn't.",
+          "source": "doubt driven development"
+        },
+        {
+          "kind": "atom",
+          "lie": "Accessibility is a nice-to-have",
+          "reality": "It's a legal requirement in many jurisdictions and an engineering quality standard.",
+          "source": "frontend ui engineering"
         },
         {
           "kind": "atom",
@@ -278,18 +290,6 @@
           "source": "planning & task breakdown"
         },
         {
-          "kind": "atom",
-          "lie": "Threat modeling is overkill here",
-          "reality": "Five minutes of \"how would I attack this?\" prevents the design flaws no control can patch later.",
-          "source": "security & hardening"
-        },
-        {
-          "kind": "atom",
-          "lie": "Monitoring is overhead",
-          "reality": "Not having monitoring means you discover problems from user complaints instead of dashboards.",
-          "source": "shipping & launch"
-        },
-        {
           "kind": "cta",
           "title": "The full analysis",
           "subtitle": "153 excuses. 24 disciplines. One issue a week.",
@@ -303,14 +303,26 @@
       "clusterLabel": "Costs more than it returns",
       "part": 3,
       "totalParts": 3,
-      "slideCount": 6,
-      "caption": "\"That's overhead\" — is it though?\n\nMore from the same cluster. 16 of the 153 excuses we catalogued share this shape.\n\nPart 3 of 3. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
+      "slideCount": 8,
+      "caption": "\"That's overhead\" — is it though?\n\nMore from the same cluster. 18 of the 153 excuses we catalogued share this shape.\n\nPart 3 of 3. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
       "slides": [
         {
           "kind": "cover",
           "title": "\"That's overhead\" — is it though?",
           "subtitle": "Sometimes yes. Usually not for the reason given.",
           "kicker": "Part 3 of 3"
+        },
+        {
+          "kind": "atom",
+          "lie": "Threat modeling is overkill here",
+          "reality": "Five minutes of \"how would I attack this?\" prevents the design flaws no control can patch later.",
+          "source": "security & hardening"
+        },
+        {
+          "kind": "atom",
+          "lie": "Monitoring is overhead",
+          "reality": "Not having monitoring means you discover problems from user complaints instead of dashboards.",
+          "source": "shipping & launch"
         },
         {
           "kind": "atom",
@@ -334,6 +346,165 @@
           "kind": "atom",
           "lie": "Tests slow me down",
           "reality": "Tests slow you down now. They speed you up every time you change the code later.",
+          "source": "test driven development"
+        },
+        {
+          "kind": "cta",
+          "title": "The full analysis",
+          "subtitle": "153 excuses. 24 disciplines. One issue a week.",
+          "action": "Newsletter link in bio"
+        }
+      ]
+    },
+    {
+      "id": "false-proxy-1",
+      "cluster": "false-proxy",
+      "clusterLabel": "Technically true",
+      "part": 1,
+      "totalParts": 3,
+      "slideCount": 8,
+      "caption": "The excuses that are completely true\n\nWe catalogued 153 excuses engineers actually make, across 24 engineering disciplines.\n\n15 of them share this exact shape — and they show up in 13 separate disciplines that never coordinated with each other.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
+      "slides": [
+        {
+          "kind": "cover",
+          "title": "The excuses that are completely true",
+          "subtitle": "And still wrong. That's what makes them hard to argue with.",
+          "kicker": "Part 1 of 3"
+        },
+        {
+          "kind": "atom",
+          "lie": "Accepting the Idempotency-Key header is enough",
+          "reality": "The header is the contract; storing the key against the result is the implementation. A key you accept but don't honour tells the client retrying is safe when it isn't.",
+          "source": "api & interface design"
+        },
+        {
+          "kind": "atom",
+          "lie": "Our queue guarantees exactly-once delivery",
+          "reality": "No queue does across a consumer crash — the broker's ack and your side effect are not in one transaction. Design for at-least-once with idempotent processing.",
+          "source": "api & interface design"
+        },
+        {
+          "kind": "atom",
+          "lie": "The DOM must be correct if the tests pass",
+          "reality": "Unit tests don't test CSS, layout, or real browser rendering. DevTools does.",
+          "source": "browser testing with devtools"
+        },
+        {
+          "kind": "atom",
+          "lie": "Manual testing is enough",
+          "reality": "Manual testing doesn't scale and isn't repeatable. Automate what you can.",
+          "source": "ci cd & automation"
+        },
+        {
+          "kind": "atom",
+          "lie": "It works, that's good enough",
+          "reality": "Working code that's unreadable, insecure, or architecturally wrong creates debt that compounds.",
+          "source": "code review & quality"
+        },
+        {
+          "kind": "atom",
+          "lie": "The tests pass, so it's good",
+          "reality": "Tests are necessary but not sufficient. They don't catch architecture problems, security issues, or readability concerns.",
+          "source": "code review & quality"
+        },
+        {
+          "kind": "cta",
+          "title": "The full analysis",
+          "subtitle": "153 excuses. 24 disciplines. One issue a week.",
+          "action": "Newsletter link in bio"
+        }
+      ]
+    },
+    {
+      "id": "false-proxy-2",
+      "cluster": "false-proxy",
+      "clusterLabel": "Technically true",
+      "part": 2,
+      "totalParts": 3,
+      "slideCount": 8,
+      "caption": "The excuses that are completely true\n\nMore from the same cluster. 15 of the 153 excuses we catalogued share this shape.\n\nPart 2 of 3. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
+      "slides": [
+        {
+          "kind": "cover",
+          "title": "The excuses that are completely true",
+          "subtitle": "And still wrong. That's what makes them hard to argue with.",
+          "kicker": "Part 2 of 3"
+        },
+        {
+          "kind": "atom",
+          "lie": "The types make it self-documenting",
+          "reality": "Types document structure, not intent. A well-named function explains *why* better than a type signature explains *what*.",
+          "source": "code simplification"
+        },
+        {
+          "kind": "atom",
+          "lie": "The tests are the constraints",
+          "reality": "Tests you wrote prove you agree with yourself; they say nothing about coverage of new code, dependency risk, or bundle growth",
+          "source": "constraint driven development"
+        },
+        {
+          "kind": "atom",
+          "lie": "It works on my machine",
+          "reality": "Environments differ. Check CI, check config, check dependencies.",
+          "source": "debugging & error recovery"
+        },
+        {
+          "kind": "atom",
+          "lie": "The code is self-documenting",
+          "reality": "Code shows what. It doesn't show why, what alternatives were rejected, or what constraints apply.",
+          "source": "documentation & adrs"
+        },
+        {
+          "kind": "atom",
+          "lie": "I'll add logging after it works",
+          "reality": "\"After\" becomes \"after the first incident\", which is the most expensive moment to discover you're blind. Instrument as you build.",
+          "source": "observability & instrumentation"
+        },
+        {
+          "kind": "atom",
+          "lie": "It's fast on my machine",
+          "reality": "Your machine isn't the user's. Profile on representative hardware and networks.",
+          "source": "performance optimization"
+        },
+        {
+          "kind": "cta",
+          "title": "The full analysis",
+          "subtitle": "153 excuses. 24 disciplines. One issue a week.",
+          "action": "Newsletter link in bio"
+        }
+      ]
+    },
+    {
+      "id": "false-proxy-3",
+      "cluster": "false-proxy",
+      "clusterLabel": "Technically true",
+      "part": 3,
+      "totalParts": 3,
+      "slideCount": 5,
+      "caption": "The excuses that are completely true\n\nMore from the same cluster. 15 of the 153 excuses we catalogued share this shape.\n\nPart 3 of 3. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
+      "slides": [
+        {
+          "kind": "cover",
+          "title": "The excuses that are completely true",
+          "subtitle": "And still wrong. That's what makes them hard to argue with.",
+          "kicker": "Part 3 of 3"
+        },
+        {
+          "kind": "atom",
+          "lie": "The audit passed, so the dependency is safe",
+          "reality": "Audits match known advisories. They do not detect a newly malicious package or make unreviewed install scripts safe to execute.",
+          "source": "security & hardening"
+        },
+        {
+          "kind": "atom",
+          "lie": "It works in staging, it'll work in production",
+          "reality": "Production has different data, traffic patterns, and edge cases. Monitor after deploy.",
+          "source": "shipping & launch"
+        },
+        {
+          "kind": "atom",
+          "lie": "The code is self-explanatory",
+          "reality": "Tests ARE the specification. They document what the code should do, not what it does.",
           "source": "test driven development"
         },
         {
@@ -504,131 +675,13 @@
       ]
     },
     {
-      "id": "false-proxy-1",
-      "cluster": "false-proxy",
-      "clusterLabel": "Technically true",
-      "part": 1,
-      "totalParts": 2,
-      "slideCount": 8,
-      "caption": "The excuses that are completely true\n\nWe catalogued 153 excuses engineers actually make, across 24 engineering disciplines.\n\n14 of them share this exact shape — and they show up in 12 separate disciplines that never coordinated with each other.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
-      "slides": [
-        {
-          "kind": "cover",
-          "title": "The excuses that are completely true",
-          "subtitle": "And still wrong. That's what makes them hard to argue with.",
-          "kicker": "Part 1 of 2"
-        },
-        {
-          "kind": "atom",
-          "lie": "Accepting the Idempotency-Key header is enough",
-          "reality": "The header is the contract; storing the key against the result is the implementation. A key you accept but don't honour tells the client retrying is safe when it isn't.",
-          "source": "api & interface design"
-        },
-        {
-          "kind": "atom",
-          "lie": "Our queue guarantees exactly-once delivery",
-          "reality": "No queue does across a consumer crash — the broker's ack and your side effect are not in one transaction. Design for at-least-once with idempotent processing.",
-          "source": "api & interface design"
-        },
-        {
-          "kind": "atom",
-          "lie": "The DOM must be correct if the tests pass",
-          "reality": "Unit tests don't test CSS, layout, or real browser rendering. DevTools does.",
-          "source": "browser testing with devtools"
-        },
-        {
-          "kind": "atom",
-          "lie": "Manual testing is enough",
-          "reality": "Manual testing doesn't scale and isn't repeatable. Automate what you can.",
-          "source": "ci cd & automation"
-        },
-        {
-          "kind": "atom",
-          "lie": "It works, that's good enough",
-          "reality": "Working code that's unreadable, insecure, or architecturally wrong creates debt that compounds.",
-          "source": "code review & quality"
-        },
-        {
-          "kind": "atom",
-          "lie": "The tests pass, so it's good",
-          "reality": "Tests are necessary but not sufficient. They don't catch architecture problems, security issues, or readability concerns.",
-          "source": "code review & quality"
-        },
-        {
-          "kind": "cta",
-          "title": "The full analysis",
-          "subtitle": "153 excuses. 24 disciplines. One issue a week.",
-          "action": "Newsletter link in bio"
-        }
-      ]
-    },
-    {
-      "id": "false-proxy-2",
-      "cluster": "false-proxy",
-      "clusterLabel": "Technically true",
-      "part": 2,
-      "totalParts": 2,
-      "slideCount": 8,
-      "caption": "The excuses that are completely true\n\nMore from the same cluster. 14 of the 153 excuses we catalogued share this shape.\n\nPart 2 of 2. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
-      "slides": [
-        {
-          "kind": "cover",
-          "title": "The excuses that are completely true",
-          "subtitle": "And still wrong. That's what makes them hard to argue with.",
-          "kicker": "Part 2 of 2"
-        },
-        {
-          "kind": "atom",
-          "lie": "The types make it self-documenting",
-          "reality": "Types document structure, not intent. A well-named function explains *why* better than a type signature explains *what*.",
-          "source": "code simplification"
-        },
-        {
-          "kind": "atom",
-          "lie": "It works on my machine",
-          "reality": "Environments differ. Check CI, check config, check dependencies.",
-          "source": "debugging & error recovery"
-        },
-        {
-          "kind": "atom",
-          "lie": "The code is self-documenting",
-          "reality": "Code shows what. It doesn't show why, what alternatives were rejected, or what constraints apply.",
-          "source": "documentation & adrs"
-        },
-        {
-          "kind": "atom",
-          "lie": "I'll add logging after it works",
-          "reality": "\"After\" becomes \"after the first incident\", which is the most expensive moment to discover you're blind. Instrument as you build.",
-          "source": "observability & instrumentation"
-        },
-        {
-          "kind": "atom",
-          "lie": "It's fast on my machine",
-          "reality": "Your machine isn't the user's. Profile on representative hardware and networks.",
-          "source": "performance optimization"
-        },
-        {
-          "kind": "atom",
-          "lie": "The audit passed, so the dependency is safe",
-          "reality": "Audits match known advisories. They do not detect a newly malicious package or make unreviewed install scripts safe to execute.",
-          "source": "security & hardening"
-        },
-        {
-          "kind": "cta",
-          "title": "The full analysis",
-          "subtitle": "153 excuses. 24 disciplines. One issue a week.",
-          "action": "Newsletter link in bio"
-        }
-      ]
-    },
-    {
       "id": "confidence-1",
       "cluster": "confidence",
       "clusterLabel": "I already know",
       "part": 1,
       "totalParts": 2,
       "slideCount": 8,
-      "caption": "\"I already know\"\n\nWe catalogued 153 excuses engineers actually make, across 24 engineering disciplines.\n\n12 of them share this exact shape — and they show up in 9 separate disciplines that never coordinated with each other.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
+      "caption": "\"I already know\"\n\nWe catalogued 153 excuses engineers actually make, across 24 engineering disciplines.\n\n13 of them share this exact shape — and they show up in 10 separate disciplines that never coordinated with each other.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
       "slides": [
         {
           "kind": "cover",
@@ -656,6 +709,12 @@
         },
         {
           "kind": "atom",
+          "lie": "I'll remember what our standards are",
+          "reality": "The agent won't, and it's writing most of the code",
+          "source": "constraint driven development"
+        },
+        {
+          "kind": "atom",
           "lie": "I know what the bug is, I'll just fix it",
           "reality": "You might be right 70% of the time. The other 30% costs hours. Reproduce first.",
           "source": "debugging & error recovery"
@@ -665,12 +724,6 @@
           "lie": "I'm confident, skip the doubt step",
           "reality": "Confidence correlates poorly with correctness on novel problems. Moments of certainty are exactly when blind spots hide.",
           "source": "doubt driven development"
-        },
-        {
-          "kind": "atom",
-          "lie": "The ask is clear enough",
-          "reality": "If you can't write the user's desired outcome in one sentence right now, the ask isn't clear. Run Step 1 before deciding.",
-          "source": "interview me"
         },
         {
           "kind": "cta",
@@ -687,13 +740,19 @@
       "part": 2,
       "totalParts": 2,
       "slideCount": 8,
-      "caption": "\"I already know\"\n\nMore from the same cluster. 12 of the 153 excuses we catalogued share this shape.\n\nPart 2 of 2. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
+      "caption": "\"I already know\"\n\nMore from the same cluster. 13 of the 153 excuses we catalogued share this shape.\n\nPart 2 of 2. Earlier parts are on the profile.\n\nSwipe for the ones we found. 👉\n\nFull breakdown in the newsletter — link in bio.\n\n#softwareengineering #codequality #devlife #programming #techdebt",
       "slides": [
         {
           "kind": "cover",
           "title": "\"I already know\"",
           "subtitle": "Confidence is not a verification method",
           "kicker": "Part 2 of 2"
+        },
+        {
+          "kind": "atom",
+          "lie": "The ask is clear enough",
+          "reality": "If you can't write the user's desired outcome in one sentence right now, the ask isn't clear. Run Step 1 before deciding.",
+          "source": "interview me"
         },
         {
           "kind": "atom",
@@ -723,12 +782,6 @@
           "kind": "atom",
           "lie": "I'm confident about this API",
           "reality": "Confidence is not evidence. Training data contains outdated patterns that look correct but break against current versions. Verify.",
-          "source": "source driven development"
-        },
-        {
-          "kind": "atom",
-          "lie": "This is a simple task, no need to check",
-          "reality": "Simple tasks with wrong patterns become templates. The user copies your deprecated form handler into ten components before discovering the modern approach exists.",
           "source": "source driven development"
         },
         {

@@ -32,15 +32,20 @@ function section(md, heading) {
 /** Parse a two-column markdown table into {left, right} rows. */
 function parseTable(body) {
   if (!body) return [];
-  return body
+  const rows = body
     .split('\n')
     .filter((l) => l.trim().startsWith('|'))
     .map((l) => l.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map((c) => c.trim()))
-    .filter((cells) => cells.length >= 2)
-    // drop the header row and the |---|---| separator
-    .filter((cells) => !/^-{2,}$/.test(cells[0].replace(/:/g, '')))
-    .filter((cells) => cells[0].toLowerCase() !== 'rationalization')
-    .map(([left, right]) => ({ left, right }));
+    .filter((cells) => cells.length >= 2);
+
+  // Everything at or above the |---|---| separator is header, whatever it's
+  // called. Matching header text by keyword ("Rationalization") silently let a
+  // row through the moment one skill titled its column "Excuse" instead —
+  // cutting at the separator is immune to whatever word the next skill picks.
+  const separator = rows.findIndex((cells) => /^:?-{2,}:?$/.test(cells[0].trim()));
+  const dataRows = separator === -1 ? rows : rows.slice(separator + 1);
+
+  return dataRows.map(([left, right]) => ({ left, right }));
 }
 
 /** Parse a `- ` bullet list into plain strings. */

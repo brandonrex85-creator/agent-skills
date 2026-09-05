@@ -11,13 +11,13 @@ depends_on: issue 001 (teases this issue)
 
 # Technically True
 
-Last issue we counted 153 excuses that engineers actually make, across 24 disciplines,
-and found that the largest cluster was deferral — sixteen separate disciplines
+Last issue we counted 163 excuses that engineers actually make, across 25 disciplines,
+and found that the largest cluster was deferral — seventeen separate disciplines
 independently naming "we'll do it later" as a top failure mode.
 
 This issue is about a smaller cluster that's harder to deal with.
 
-Fourteen of the 153, spread across twelve disciplines. What makes them interesting isn't
+Fifteen of the 163, spread across thirteen disciplines. What makes them interesting isn't
 the count. It's that **every one of them is true.**
 
 > "The tests pass, so it's good."
@@ -53,7 +53,7 @@ document is *why*: which alternatives were rejected, what constraint forced this
 what breaks if you change it. That information was never in the code, so no amount of
 clarity in the code recovers it.
 
-The pattern underneath all fourteen: **a scope error, not a factual one.**
+The pattern underneath all fifteen: **a scope error, not a factual one.**
 
 ## Why this is worse than being wrong
 
@@ -106,7 +106,7 @@ less than the sentence implies.
 ---
 
 *Next issue: the second-largest cluster is the one that generates the most heated
-disagreement — the claim that a practice costs more than it returns. Fifteen disciplines
+disagreement — the claim that a practice costs more than it returns. Sixteen disciplines
 name it, and unlike the other two, it's sometimes right.*
 
 ---

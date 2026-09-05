@@ -27,20 +27,22 @@ const CLUSTERS = [
     // "might be useful later" / "might need it later" are speculative RETENTION,
     // not deferral of work — opposite shape, so they are excluded explicitly.
     test: (h) =>
-      /\blater\b|\bafter\b|\bonce we\b|\bwhen we have time\b|\bat release time\b|\bwhen .* stabilize|\bnext commit\b/i.test(h) &&
+      /\blater\b|\bafter\b|\bonce (we|the)\b|\bwhen we have time\b|\bat release time\b|\bwhen .* (stabilize|settle)|\bnext commit\b/i.test(h) &&
       !/\bmight (be useful|need)\b/i.test(h),
   },
   {
     id: 'false-proxy',
     label: 'Technically true',
     claim: 'A real signal is treated as proof of something it does not actually cover.',
-    test: (h) => /\btests? pass\b|\bpassed\b|\bworks on my machine\b|\bfast on my machine\b|\bin staging\b|\bself-documenting\b|\bself-explanatory\b|\bit works\b|\bis enough\b|\bguarantees\b|\bthe audit\b/i.test(h),
+    test: (h) =>
+      /\btests? pass\b|\bpassed\b|\bworks on my machine\b|\bfast on my machine\b|\bin staging\b|\bself-documenting\b|\bself-explanatory\b|\bit works\b|\bis enough\b|\bguarantees\b|\bthe audit\b|\bthe tests are the\b/i.test(h),
   },
   {
     id: 'ceremony',
     label: 'Costs more than it returns',
     claim: 'The practice is overhead — too slow, too expensive, not worth it.',
-    test: (h) => /\boverkill\b|\boverhead\b|\btoo slow\b|\bslow me down\b|\bslow us down\b|\btoo expensive\b|\bis expensive\b|\bwastes?\b|\bnice-to-have\b/i.test(h),
+    test: (h) =>
+      /\boverkill\b|\boverhead\b|\btoo slow\b|\bslow (me|us|the \w+) down\b|\btoo expensive\b|\bis expensive\b|\bwastes?\b|\bnice-to-have\b|\bblock us\b|\bwill block\b/i.test(h),
   },
   {
     id: 'triviality',
@@ -52,7 +54,8 @@ const CLUSTERS = [
     id: 'confidence',
     label: 'I already know',
     claim: 'Verification is unnecessary because the answer is already known.',
-    test: (h) => /\bI'm confident\b|\bI know\b|\bI wrote it\b|\bin my head\b|\bmental model\b|\bclear enough\b|\bI get it\b|\bno need to (check|re-measure)\b|\bwe're done\b|\bmust have had a reason\b/i.test(h),
+    test: (h) =>
+      /\bI'm confident\b|\bI know\b|\bI'll remember\b|\bI wrote it\b|\bin my head\b|\bmental model\b|\bclear enough\b|\bI get it\b|\bno need to (check|re-measure)\b|\bwe're done\b|\bmust have had a reason\b/i.test(h),
   },
   {
     id: 'delegation',

@@ -1,7 +1,7 @@
 ---
 issue: 001
 title: "The Later Tax"
-subtitle: "16 of 24 engineering disciplines independently name the same failure mode"
+subtitle: "17 of 25 engineering disciplines independently name the same failure mode"
 status: DRAFT — awaiting human approval before send
 byline: brand (editorial voice, no personhood claim)
 brand: The Later Tax (working name — see business/brand.json)
@@ -14,10 +14,10 @@ cta: primary
 
 We did something tedious last week so you don't have to.
 
-We took 24 engineering disciplines — testing, security, API design, CI, observability,
+We took 25 engineering disciplines — testing, security, API design, CI, observability,
 migrations, performance, code review, the whole lifecycle — and pulled out every
 excuse practitioners actually make. Not strawmen. The real ones, the ones that sound
-reasonable in the moment. 153 of them.
+reasonable in the moment. 163 of them.
 
 Then we looked for overlap.
 
@@ -27,7 +27,7 @@ problems, different fixes.
 
 That's not what the data says.
 
-**16 of the 24 disciplines — 67% — independently name the same failure mode as a top
+**17 of the 25 disciplines — 68% — independently name the same failure mode as a top
 rationalization. Not a related one. The same one.**
 
 It's the word *later*.
@@ -47,10 +47,10 @@ Any single one of those is defensible. That's the whole problem. Deferring API d
 ship a demo is a reasonable trade. Deferring CI on a two-day spike is reasonable. Taken
 one at a time, each deferral is a small, rational, locally-optimal call.
 
-The failure isn't in any one decision. It's that sixteen separate disciplines each offer
+The failure isn't in any one decision. It's that seventeen separate disciplines each offer
 you a locally-optimal reason to defer, and nothing in your process is counting the total.
 
-You don't take on the later tax in one decision. You take it on in sixteen, each one
+You don't take on the later tax in one decision. You take it on in seventeen, each one
 looking sensible, over a quarter — and then you spend the following quarter paying it
 without ever having decided to.
 
@@ -75,7 +75,7 @@ after the API is public can't change the API. The tell: if deferring changes *wh
 able to build later*, it isn't a schedule decision, it's an architecture decision wearing
 a schedule decision's clothes.
 
-**3. The cheapest gate is the one that runs without you.** Most of the sixteen are things
+**3. The cheapest gate is the one that runs without you.** Most of the seventeen are things
 a pipeline can refuse to merge — test coverage, dependency and secret scans, bundle-size
 budgets, lint, type checks, visual regression. That converts "we'll do it later" from a
 promise into a build failure, which is the only form of accountability that survives a
@@ -101,18 +101,18 @@ vague ones.
 
 ## The uncomfortable part
 
-The disciplines didn't coordinate. Sixteen separate bodies of practice, written by people
+The disciplines didn't coordinate. Seventeen separate bodies of practice, written by people
 solving unrelated problems, each independently concluded that their number one enemy is a
 reasonable-sounding postponement.
 
-When sixteen independent observers converge on one answer, the thing they're describing is
+When seventeen independent observers converge on one answer, the thing they're describing is
 usually not a discipline problem.
 
 It's a default. And defaults only change when something makes them expensive.
 
 ---
 
-*Next issue: we ran the same analysis on the other 134 rationalizations. The strangest
+*Next issue: we ran the same analysis on the other 143 rationalizations. The strangest
 cluster isn't the excuses that are wrong — it's the ones that are completely true.*
 
 ---

@@ -3,14 +3,14 @@
 Operating state for the content business. Read this first every session.
 Keep it short — detail belongs in `journal/`.
 
-_Last updated: 2026-08-26 (run 005)_
+_Last updated: 2026-09-05 (run 006)_
 
 ---
 
 ## What this business is
 
-A content business built on the `agent-skills` library: 24 production-grade
-engineering skills (~45k words) covering the full software lifecycle. The library
+A content business built on the `agent-skills` library: 25 production-grade
+engineering skills (~52k words) covering the full software lifecycle. The library
 is the product and the raw material; the business is turning it into audience,
 then revenue.
 
@@ -21,7 +21,8 @@ agents. Not AI hype, not generic dev advice — specific, opinionated process.
 
 | Asset | State |
 |---|---|
-| 24 skills, ~45k words | Exists, high quality, **undistributed** |
+| 25 skills, ~52k words | Exists, high quality, **undistributed** |
+| Upstream sync | Run 006 — fork was 41 commits behind `addyosmani/agent-skills` |
 | 4 agent personas, 8 commands, 7 checklists | Exists, supporting material |
 | 362 extracted content atoms | Built run 001 — `content/atoms.json` |
 | 12-week distribution calendar | Built run 001 — `content/calendar.md` |
@@ -30,7 +31,7 @@ agents. Not AI hype, not generic dev advice — specific, opinionated process.
 | Landing page copy | Drafted run 002, **awaiting approval** |
 | Newsletter issue 002 | Drafted run 003, **awaiting approval** |
 | Rationalization cluster analysis | Built run 003 — `content/clusters.json` |
-| 14 Instagram carousels / 107 rendered PNGs | Built run 004 — `content/instagram/` |
+| 15 Instagram carousels / 114 slides (PNG+JPEG) | Rebuilt run 006 — `content/instagram/` |
 | Publish runbook | Built run 004 — `content/PUBLISH-RUNBOOK.md` |
 | 107 JPEG slides (API-format) | Added run 005 — PNG alone would fail API publishing |
 | Instagram spec validator | Built run 005 — `scripts/validate-slides.js` |
@@ -39,11 +40,11 @@ agents. Not AI hype, not generic dev advice — specific, opinionated process.
 
 ## Key numbers
 
-- **362** publishable content atoms extracted from existing material
-- **~72 weeks** of weekday posting runway, zero new writing required
-- **153** rationalizations / **209** red flags across the library
-- Six argument-shape clusters found (run 003). Largest: deferral, 19 across
-  **16 of 24** disciplines. Editorial runway: 4+ more issues, each with a verified finding.
+- **389** publishable content atoms extracted from existing material
+- **~77 weeks** of weekday posting runway, zero new writing required
+- **163** rationalizations / **226** red flags across the library
+- Six argument-shape clusters. Largest: deferral, 20 across **17 of 25**
+  disciplines (68%). Editorial runway: 4+ more issues, each with a verified finding.
 - Audience: **0** — no list, no channel, no distribution surface yet
 
 ## The strategic finding (run 001, still holding)
@@ -98,6 +99,22 @@ channel paid for a second one — worth repeating rather than treating as luck.
 4. Instrument: beehiiv gives open/click rates, Instagram gives saves and reach. Saves
    matter more than likes for carousels. Without these, every later call is a guess.
 5. Monetization: hold until audience > 0.
+
+## New standing risk — the library is a live dependency (run 006)
+
+The content pipeline reads `skills/`, which is now synced from an upstream that keeps
+moving. Two consequences, both hit this run:
+
+1. **Published numbers go stale silently.** Issues 001 and 002 were drafted against a
+   24-skill library. Upstream made it 25, so every count and percentage in both drafts
+   was wrong until corrected this run. Any run that syncs upstream MUST re-derive and
+   re-check the drafts before anything ships.
+2. **Parsers break on new content, not old.** A new skill titled its table column
+   "Excuse" instead of "Rationalization", and the header row was extracted as a
+   publishable atom. Fixed structurally (cut at the `|---|` separator, not by keyword).
+
+Re-run the full pipeline after any upstream sync: extract → cluster → calendar →
+instagram → render → validate.
 
 ## Standing failure mode — watch for this
 

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-25T04:41:52.446Z",
-  "skillCount": 24,
+  "generatedAt": "2026-09-05T18:49:12.704Z",
+  "skillCount": 25,
   "records": [
     {
       "skill": "api-and-interface-design",
@@ -256,6 +256,50 @@
       ]
     },
     {
+      "skill": "constraint-driven-development",
+      "description": "Establishes a project's quality bar as a written contract and stops agents quietly lowering it. Interviews the user on which dimensions matter, supplies sane default thresholds when they have no number in mind, records everything in CONSTRAINTS.md, and watches the diff for a weakened bar — new @ts-ignore or eslint-disable suppressions, skipped or deleted tests, assertions stripped out, unimplemented stubs, thresholds edited down. Use when no quality bar is written down, when the user says \"set up constraints\" or \"define our standards\", when an agent keeps silencing checks or skipping tests to get to green, when you need a coverage or performance threshold and don't know what number to pick, or when an agent writes more code than anyone will read.",
+      "overview": "Other skills in this pack describe what good looks like. `code-review-and-quality` gives you five axes. `test-driven-development` gives you a cycle. `security-and-hardening` gives you a threat list. All of that lives in prose the agent reads and may or may not follow, and none of it survives the end of the session.",
+      "words": 3537,
+      "rationalizations": [
+        {
+          "left": "\"We'll add constraints once the code settles\"",
+          "right": "Code settles around whatever was allowed while it was moving"
+        },
+        {
+          "left": "\"The tests are the constraints\"",
+          "right": "Tests you wrote prove you agree with yourself; they say nothing about coverage of new code, dependency risk, or bundle growth"
+        },
+        {
+          "left": "\"We can't hit 80% coverage\"",
+          "right": "Then don't set 80%. Set today's number and hold it"
+        },
+        {
+          "left": "\"This will slow the agent down\"",
+          "right": "Only if you put slow checks in the fast loop. That's a placement error, not an argument against constraints"
+        },
+        {
+          "left": "\"I'll remember what our standards are\"",
+          "right": "The agent won't, and it's writing most of the code"
+        },
+        {
+          "left": "\"Constraints will block us shipping\"",
+          "right": "An exception with an owner and a date unblocks you. Deleting the constraint unblocks everyone forever"
+        }
+      ],
+      "redFlags": [
+        "The interview ran past four questions, or produced a config the user can't explain",
+        "A budget was set that the codebase fails today, with no plan to reach it",
+        "A dimension was written into CONSTRAINTS.md with a number but no tool behind it",
+        "A checker was hand-rolled when a de facto one exists, so the team's existing config is ignored",
+        "Every constraint is checked by the project's own test suite, with no external opinion",
+        "`CONSTRAINTS.md` changed in the same commit as the feature that was failing",
+        "An exception has no owner, or an expiry more than a year out",
+        "The agent proposed relaxing a threshold instead of fixing the code",
+        "Slow checks landed in the edit loop and someone has started passing `--no-verify`",
+        "Nobody has opened `CONSTRAINTS.md` since it was written"
+      ]
+    },
+    {
       "skill": "context-engineering",
       "description": "Optimizes agent context setup. Use when starting a new session, when agent output quality degrades, when switching between tasks, or when you need to configure rules files and context for a project.",
       "overview": "Feed agents the right information at the right time. Context is the single biggest lever for agent output quality — too little and the agent hallucinates, too much and it loses focus. Context engineering is the practice of deliberately curating what the agent sees, when it sees it, and how it's structured.",
@@ -326,9 +370,9 @@
     },
     {
       "skill": "deprecation-and-migration",
-      "description": "Manages deprecation and migration. Use when removing old systems, APIs, or features. Use when migrating users from one implementation to another. Use when deciding whether to maintain or sunset existing code.",
+      "description": "Manages deprecation and migration. Use when removing old systems, APIs, or features. Use when migrating users from one implementation to another. Use when migrating a database schema in production, such as renaming or dropping a column without downtime (expand/contract). Use when deciding whether to maintain or sunset existing code.",
       "overview": "Code is a liability, not an asset. Every line of code has ongoing maintenance cost — bugs to fix, dependencies to update, security patches to apply, and new engineers to onboard. Deprecation is the discipline of removing code that no longer earns its keep, and migration is the process of moving users safely from the old to the new.",
-      "words": 1954,
+      "words": 1972,
       "rationalizations": [
         {
           "left": "\"It still works, why remove it?\"",
@@ -514,9 +558,9 @@
     },
     {
       "skill": "git-workflow-and-versioning",
-      "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, or when you need to organize work across multiple parallel streams. Use when cutting a release, choosing a semantic version bump, tagging, or writing a changelog.",
+      "description": "Structures git workflow practices. Use when making any code change. Use when committing, branching, resolving conflicts, opening or reviewing a pull request (PR), pushing to a remote, or when you need to organize work across multiple parallel streams. Use when cutting a release, choosing a semantic version bump, tagging, or writing a changelog.",
       "overview": "Git is your safety net. Treat commits as save points, branches as sandboxes, and history as documentation. With AI agents generating code at high speed, disciplined version control is the mechanism that keeps changes manageable, reviewable, and reversible.",
-      "words": 2132,
+      "words": 2143,
       "rationalizations": [
         {
           "left": "\"I'll commit when the feature is done\"",
@@ -684,7 +728,7 @@
       "skill": "observability-and-instrumentation",
       "description": "Instruments code so production behavior is visible and diagnosable. Use when adding logging, metrics, tracing, or alerting. Use when shipping any feature that runs in production and you need evidence it works. Use when production issues are reported but you can't tell what happened from the available data.",
       "overview": "Code you can't observe is code you can't operate. Observability is the ability to answer \"what is the system doing and why?\" from the outside, using the telemetry the code emits. Instrumentation is not a post-launch add-on — it's written alongside the feature, the same way tests are. If a feature ships without telemetry, the first user-reported bug becomes archaeology instead of a query.",
-      "words": 1700,
+      "words": 1974,
       "rationalizations": [
         {
           "left": "\"I'll add logging after it works\"",
@@ -719,6 +763,7 @@
         "A feature PR with retries, queues, or external calls and zero new telemetry",
         "Log lines built by string interpolation instead of structured fields",
         "No correlation/request ID — each log line is an orphan",
+        "One log stream fed by a scheduler, a webhook, and manual runs, with no field naming which one produced the line",
         "Metrics labeled with user IDs, raw URLs, or error message text (cardinality bomb)",
         "Latency tracked as an average with no percentiles",
         "Alerts that fire daily and get acknowledged without action",
@@ -731,7 +776,7 @@
       "skill": "performance-optimization",
       "description": "Optimizes application performance across frontend, backend, queries, and databases. Use when performance requirements exist, when you suspect performance regressions, when Core Web Vitals or load times need improvement, when N+1 query patterns need fixing, or when profiling reveals bottlenecks.",
       "overview": "Measure before optimizing. Performance work without measurement is guessing — and guessing leads to premature optimization that adds complexity without improving what matters. Profile first, identify the actual bottleneck, fix it, measure again. Optimize only what measurements prove matters.",
-      "words": 2218,
+      "words": 3315,
       "rationalizations": [
         {
           "left": "\"We'll optimize later\"",
@@ -754,6 +799,18 @@
           "right": "Frameworks prevent some issues but can't fix N+1 queries or oversized bundles."
         },
         {
+          "left": "\"The query is slow, add an index\"",
+          "right": "Read the plan first. The index may already exist and be unusable, and every index taxes writes forever."
+        },
+        {
+          "left": "\"Just cache it\"",
+          "right": "Caching an already-cheap call buys nothing and adds a staleness bug. Cache what is expensive *and* re-read far more than written."
+        },
+        {
+          "left": "\"Raise the pool size, we're running out of connections\"",
+          "right": "A pool bigger than the database can serve moves the queue somewhere less visible. Find what holds connections."
+        },
+        {
           "left": "\"It didn't help much, but it doesn't hurt\"",
           "right": "Neutral changes are a revert. You pay maintenance on them forever and got nothing back."
         },
@@ -769,6 +826,10 @@
       "redFlags": [
         "Optimization without profiling data to justify it",
         "N+1 query patterns in data fetching",
+        "An index added without a query plan before and after to justify it",
+        "A cache key that omits an input the response depends on (tenant, locale, viewer)",
+        "A cache with no stated staleness window and no invalidation strategy",
+        "Connection pool size raised in response to exhaustion, without finding what holds connections",
         "List endpoints without pagination",
         "Images without dimensions, lazy loading, or responsive sizes",
         "Bundle size growing without review",
@@ -784,7 +845,7 @@
       "skill": "planning-and-task-breakdown",
       "description": "Breaks work into ordered tasks. Use when you have a spec or clear requirements and need to break work into implementable tasks. Use when a task feels too large to start, when you need to estimate scope, or when parallel work is possible.",
       "overview": "Decompose work into small, verifiable tasks with explicit acceptance criteria. Good task breakdown is the difference between an agent that completes work reliably and one that produces a tangled mess. Every task should be small enough to implement, test, and verify in a single focused session.",
-      "words": 1551,
+      "words": 1731,
       "rationalizations": [
         {
           "left": "\"I'll figure it out as I go\"",
@@ -801,10 +862,15 @@
         {
           "left": "\"I can hold it all in my head\"",
           "right": "Context windows are finite. Written plans survive session boundaries and compaction."
+        },
+        {
+          "left": "\"The old `tasks/plan.md` is stale, I'll just replace it\"",
+          "right": "Unchecked tasks may be mid-build in another session. Overwriting them destroys work state that exists nowhere else. Stop and ask."
         }
       ],
       "redFlags": [
         "Starting implementation without a written task list",
+        "Overwriting a `tasks/plan.md` or `tasks/todo.md` that still has unchecked tasks for different work, without asking",
         "Writing `tasks/todo.md` when the project has designated an external tracker (or scattering tasks across both)",
         "Tasks that say \"implement the feature\" without acceptance criteria",
         "No verification steps in the plan",
@@ -815,9 +881,9 @@
     },
     {
       "skill": "security-and-hardening",
-      "description": "Hardens code against vulnerabilities. Use when handling user input, authentication, data storage, or external integrations. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services. Use when personal data or privacy compliance (GDPR, CCPA) is involved.",
+      "description": "Hardens code against vulnerabilities. Use when handling user input, authentication, data storage, or external integrations. Use when building any feature that accepts untrusted data, manages user sessions, or interacts with third-party services. Use when auditing dependencies for known vulnerabilities, triaging package-manager audit findings, or assessing supply-chain risk in a new package. Use when personal data or privacy compliance (GDPR, CCPA) is involved.",
       "overview": "Security-first development practices for web applications. Treat every external input as hostile, every secret as sacred, and every authorization check as mandatory. Security isn't a phase — it's a constraint on every line of code that touches user data, authentication, or external systems.",
-      "words": 3507,
+      "words": 4077,
       "rationalizations": [
         {
           "left": "\"This is an internal tool, security doesn't matter\"",
@@ -866,10 +932,11 @@
       ],
       "redFlags": [
         "User input passed directly to database queries, shell commands, or HTML rendering",
+        "A delete, move, or overwrite whose target comes from a payload, a config value, or another process's command line, guarded only by a shape check on the path",
         "Secrets in source code or commit history",
         "API endpoints without authentication or authorization checks",
         "Missing CORS configuration or wildcard (`*`) origins",
-        "No rate limiting on authentication endpoints",
+        "No rate limiting on authentication endpoints, or an in-memory limiter in front of more than one instance",
         "Stack traces or internal errors exposed to users",
         "Dependencies with known critical vulnerabilities, competing lockfiles at one installation boundary, non-reproducible installs, or blanket-approved scripts",
         "Server fetches user-supplied URLs without an allowlist (SSRF)",
@@ -1056,7 +1123,7 @@
       "skill": "using-agent-skills",
       "description": "Discovers and invokes agent skills. Use when starting a session or when you need to discover which skill applies to the current task. This is the meta-skill that governs how all other skills are discovered and invoked.",
       "overview": "Agent Skills is a collection of engineering workflow skills organized by development phase. Each skill encodes a specific process that senior engineers follow. This meta-skill helps you discover and apply the right skill for your current task.",
-      "words": 1308,
+      "words": 1316,
       "rationalizations": [],
       "redFlags": []
     }
@@ -1773,6 +1840,134 @@
       "hook": "Refactoring code outside the scope of the current task without being asked",
       "payoff": "",
       "chars": 74
+    },
+    {
+      "id": "constraint-driven-development--rationalization-1",
+      "skill": "constraint-driven-development",
+      "type": "rationalization",
+      "hook": "\"We'll add constraints once the code settles\"",
+      "payoff": "Code settles around whatever was allowed while it was moving",
+      "chars": 105
+    },
+    {
+      "id": "constraint-driven-development--rationalization-2",
+      "skill": "constraint-driven-development",
+      "type": "rationalization",
+      "hook": "\"The tests are the constraints\"",
+      "payoff": "Tests you wrote prove you agree with yourself; they say nothing about coverage of new code, dependency risk, or bundle growth",
+      "chars": 156
+    },
+    {
+      "id": "constraint-driven-development--rationalization-3",
+      "skill": "constraint-driven-development",
+      "type": "rationalization",
+      "hook": "\"We can't hit 80% coverage\"",
+      "payoff": "Then don't set 80%. Set today's number and hold it",
+      "chars": 77
+    },
+    {
+      "id": "constraint-driven-development--rationalization-4",
+      "skill": "constraint-driven-development",
+      "type": "rationalization",
+      "hook": "\"This will slow the agent down\"",
+      "payoff": "Only if you put slow checks in the fast loop. That's a placement error, not an argument against constraints",
+      "chars": 138
+    },
+    {
+      "id": "constraint-driven-development--rationalization-5",
+      "skill": "constraint-driven-development",
+      "type": "rationalization",
+      "hook": "\"I'll remember what our standards are\"",
+      "payoff": "The agent won't, and it's writing most of the code",
+      "chars": 88
+    },
+    {
+      "id": "constraint-driven-development--rationalization-6",
+      "skill": "constraint-driven-development",
+      "type": "rationalization",
+      "hook": "\"Constraints will block us shipping\"",
+      "payoff": "An exception with an owner and a date unblocks you. Deleting the constraint unblocks everyone forever",
+      "chars": 137
+    },
+    {
+      "id": "constraint-driven-development--red-flag-1",
+      "skill": "constraint-driven-development",
+      "type": "red-flag",
+      "hook": "The interview ran past four questions, or produced a config the user can't explain",
+      "payoff": "",
+      "chars": 82
+    },
+    {
+      "id": "constraint-driven-development--red-flag-2",
+      "skill": "constraint-driven-development",
+      "type": "red-flag",
+      "hook": "A budget was set that the codebase fails today, with no plan to reach it",
+      "payoff": "",
+      "chars": 72
+    },
+    {
+      "id": "constraint-driven-development--red-flag-3",
+      "skill": "constraint-driven-development",
+      "type": "red-flag",
+      "hook": "A dimension was written into CONSTRAINTS.md with a number but no tool behind it",
+      "payoff": "",
+      "chars": 79
+    },
+    {
+      "id": "constraint-driven-development--red-flag-4",
+      "skill": "constraint-driven-development",
+      "type": "red-flag",
+      "hook": "A checker was hand-rolled when a de facto one exists, so the team's existing config is ignored",
+      "payoff": "",
+      "chars": 94
+    },
+    {
+      "id": "constraint-driven-development--red-flag-5",
+      "skill": "constraint-driven-development",
+      "type": "red-flag",
+      "hook": "Every constraint is checked by the project's own test suite, with no external opinion",
+      "payoff": "",
+      "chars": 85
+    },
+    {
+      "id": "constraint-driven-development--red-flag-6",
+      "skill": "constraint-driven-development",
+      "type": "red-flag",
+      "hook": "`CONSTRAINTS.md` changed in the same commit as the feature that was failing",
+      "payoff": "",
+      "chars": 75
+    },
+    {
+      "id": "constraint-driven-development--red-flag-7",
+      "skill": "constraint-driven-development",
+      "type": "red-flag",
+      "hook": "An exception has no owner, or an expiry more than a year out",
+      "payoff": "",
+      "chars": 60
+    },
+    {
+      "id": "constraint-driven-development--red-flag-8",
+      "skill": "constraint-driven-development",
+      "type": "red-flag",
+      "hook": "The agent proposed relaxing a threshold instead of fixing the code",
+      "payoff": "",
+      "chars": 66
+    },
+    {
+      "id": "constraint-driven-development--red-flag-9",
+      "skill": "constraint-driven-development",
+      "type": "red-flag",
+      "hook": "Slow checks landed in the edit loop and someone has started passing `--no-verify`",
+      "payoff": "",
+      "chars": 81
+    },
+    {
+      "id": "constraint-driven-development--red-flag-10",
+      "skill": "constraint-driven-development",
+      "type": "red-flag",
+      "hook": "Nobody has opened `CONSTRAINTS.md` since it was written",
+      "payoff": "",
+      "chars": 55
     },
     {
       "id": "context-engineering--rationalization-1",
@@ -3026,12 +3221,20 @@
       "id": "observability-and-instrumentation--red-flag-4",
       "skill": "observability-and-instrumentation",
       "type": "red-flag",
+      "hook": "One log stream fed by a scheduler, a webhook, and manual runs, with no field naming which one produced the line",
+      "payoff": "",
+      "chars": 111
+    },
+    {
+      "id": "observability-and-instrumentation--red-flag-5",
+      "skill": "observability-and-instrumentation",
+      "type": "red-flag",
       "hook": "Metrics labeled with user IDs, raw URLs, or error message text (cardinality bomb)",
       "payoff": "",
       "chars": 81
     },
     {
-      "id": "observability-and-instrumentation--red-flag-5",
+      "id": "observability-and-instrumentation--red-flag-6",
       "skill": "observability-and-instrumentation",
       "type": "red-flag",
       "hook": "Latency tracked as an average with no percentiles",
@@ -3039,7 +3242,7 @@
       "chars": 49
     },
     {
-      "id": "observability-and-instrumentation--red-flag-6",
+      "id": "observability-and-instrumentation--red-flag-7",
       "skill": "observability-and-instrumentation",
       "type": "red-flag",
       "hook": "Alerts that fire daily and get acknowledged without action",
@@ -3047,7 +3250,7 @@
       "chars": 58
     },
     {
-      "id": "observability-and-instrumentation--red-flag-7",
+      "id": "observability-and-instrumentation--red-flag-8",
       "skill": "observability-and-instrumentation",
       "type": "red-flag",
       "hook": "Alerts on causes (CPU, memory) paging humans while user-facing error rate is unmonitored",
@@ -3055,7 +3258,7 @@
       "chars": 88
     },
     {
-      "id": "observability-and-instrumentation--red-flag-8",
+      "id": "observability-and-instrumentation--red-flag-9",
       "skill": "observability-and-instrumentation",
       "type": "red-flag",
       "hook": "Secrets, tokens, or full request bodies appearing in logs",
@@ -3063,7 +3266,7 @@
       "chars": 57
     },
     {
-      "id": "observability-and-instrumentation--red-flag-9",
+      "id": "observability-and-instrumentation--red-flag-10",
       "skill": "observability-and-instrumentation",
       "type": "red-flag",
       "hook": "\"It works on my machine\" as the only evidence a production feature is healthy",
@@ -3114,12 +3317,36 @@
       "id": "performance-optimization--rationalization-6",
       "skill": "performance-optimization",
       "type": "rationalization",
+      "hook": "\"The query is slow, add an index\"",
+      "payoff": "Read the plan first. The index may already exist and be unusable, and every index taxes writes forever.",
+      "chars": 136
+    },
+    {
+      "id": "performance-optimization--rationalization-7",
+      "skill": "performance-optimization",
+      "type": "rationalization",
+      "hook": "\"Just cache it\"",
+      "payoff": "Caching an already-cheap call buys nothing and adds a staleness bug. Cache what is expensive *and* re-read far more than written.",
+      "chars": 144
+    },
+    {
+      "id": "performance-optimization--rationalization-8",
+      "skill": "performance-optimization",
+      "type": "rationalization",
+      "hook": "\"Raise the pool size, we're running out of connections\"",
+      "payoff": "A pool bigger than the database can serve moves the queue somewhere less visible. Find what holds connections.",
+      "chars": 165
+    },
+    {
+      "id": "performance-optimization--rationalization-9",
+      "skill": "performance-optimization",
+      "type": "rationalization",
       "hook": "\"It didn't help much, but it doesn't hurt\"",
       "payoff": "Neutral changes are a revert. You pay maintenance on them forever and got nothing back.",
       "chars": 129
     },
     {
-      "id": "performance-optimization--rationalization-7",
+      "id": "performance-optimization--rationalization-10",
       "skill": "performance-optimization",
       "type": "rationalization",
       "hook": "\"We already wrote it, may as well keep it\"",
@@ -3127,7 +3354,7 @@
       "chars": 116
     },
     {
-      "id": "performance-optimization--rationalization-8",
+      "id": "performance-optimization--rationalization-11",
       "skill": "performance-optimization",
       "type": "rationalization",
       "hook": "\"The improvement is obvious, no need to re-measure\"",
@@ -3154,12 +3381,44 @@
       "id": "performance-optimization--red-flag-3",
       "skill": "performance-optimization",
       "type": "red-flag",
+      "hook": "An index added without a query plan before and after to justify it",
+      "payoff": "",
+      "chars": 66
+    },
+    {
+      "id": "performance-optimization--red-flag-4",
+      "skill": "performance-optimization",
+      "type": "red-flag",
+      "hook": "A cache key that omits an input the response depends on (tenant, locale, viewer)",
+      "payoff": "",
+      "chars": 80
+    },
+    {
+      "id": "performance-optimization--red-flag-5",
+      "skill": "performance-optimization",
+      "type": "red-flag",
+      "hook": "A cache with no stated staleness window and no invalidation strategy",
+      "payoff": "",
+      "chars": 68
+    },
+    {
+      "id": "performance-optimization--red-flag-6",
+      "skill": "performance-optimization",
+      "type": "red-flag",
+      "hook": "Connection pool size raised in response to exhaustion, without finding what holds connections",
+      "payoff": "",
+      "chars": 93
+    },
+    {
+      "id": "performance-optimization--red-flag-7",
+      "skill": "performance-optimization",
+      "type": "red-flag",
       "hook": "List endpoints without pagination",
       "payoff": "",
       "chars": 33
     },
     {
-      "id": "performance-optimization--red-flag-4",
+      "id": "performance-optimization--red-flag-8",
       "skill": "performance-optimization",
       "type": "red-flag",
       "hook": "Images without dimensions, lazy loading, or responsive sizes",
@@ -3167,7 +3426,7 @@
       "chars": 60
     },
     {
-      "id": "performance-optimization--red-flag-5",
+      "id": "performance-optimization--red-flag-9",
       "skill": "performance-optimization",
       "type": "red-flag",
       "hook": "Bundle size growing without review",
@@ -3175,7 +3434,7 @@
       "chars": 34
     },
     {
-      "id": "performance-optimization--red-flag-6",
+      "id": "performance-optimization--red-flag-10",
       "skill": "performance-optimization",
       "type": "red-flag",
       "hook": "No performance monitoring in production",
@@ -3183,7 +3442,7 @@
       "chars": 39
     },
     {
-      "id": "performance-optimization--red-flag-7",
+      "id": "performance-optimization--red-flag-11",
       "skill": "performance-optimization",
       "type": "red-flag",
       "hook": "`React.memo` and `useMemo` everywhere (overusing is as bad as underusing)",
@@ -3191,7 +3450,7 @@
       "chars": 73
     },
     {
-      "id": "performance-optimization--red-flag-8",
+      "id": "performance-optimization--red-flag-12",
       "skill": "performance-optimization",
       "type": "red-flag",
       "hook": "Optimizations kept without a re-measurement that justifies them",
@@ -3199,7 +3458,7 @@
       "chars": 63
     },
     {
-      "id": "performance-optimization--red-flag-9",
+      "id": "performance-optimization--red-flag-13",
       "skill": "performance-optimization",
       "type": "red-flag",
       "hook": "Several optimizations bundled into one measurement, so no single change can be attributed",
@@ -3207,7 +3466,7 @@
       "chars": 89
     },
     {
-      "id": "performance-optimization--red-flag-10",
+      "id": "performance-optimization--red-flag-14",
       "skill": "performance-optimization",
       "type": "red-flag",
       "hook": "A \"win\" that required a test to be changed, skipped, or deleted",
@@ -3215,7 +3474,7 @@
       "chars": 63
     },
     {
-      "id": "performance-optimization--red-flag-11",
+      "id": "performance-optimization--red-flag-15",
       "skill": "performance-optimization",
       "type": "red-flag",
       "hook": "The same failed optimization attempted more than once because nobody recorded the first attempt",
@@ -3255,6 +3514,14 @@
       "chars": 114
     },
     {
+      "id": "planning-and-task-breakdown--rationalization-5",
+      "skill": "planning-and-task-breakdown",
+      "type": "rationalization",
+      "hook": "\"The old `tasks/plan.md` is stale, I'll just replace it\"",
+      "payoff": "Unchecked tasks may be mid-build in another session. Overwriting them destroys work state that exists nowhere else. Stop and ask.",
+      "chars": 185
+    },
+    {
       "id": "planning-and-task-breakdown--red-flag-1",
       "skill": "planning-and-task-breakdown",
       "type": "red-flag",
@@ -3266,12 +3533,20 @@
       "id": "planning-and-task-breakdown--red-flag-2",
       "skill": "planning-and-task-breakdown",
       "type": "red-flag",
+      "hook": "Overwriting a `tasks/plan.md` or `tasks/todo.md` that still has unchecked tasks for different work, without asking",
+      "payoff": "",
+      "chars": 114
+    },
+    {
+      "id": "planning-and-task-breakdown--red-flag-3",
+      "skill": "planning-and-task-breakdown",
+      "type": "red-flag",
       "hook": "Writing `tasks/todo.md` when the project has designated an external tracker (or scattering tasks across both)",
       "payoff": "",
       "chars": 109
     },
     {
-      "id": "planning-and-task-breakdown--red-flag-3",
+      "id": "planning-and-task-breakdown--red-flag-4",
       "skill": "planning-and-task-breakdown",
       "type": "red-flag",
       "hook": "Tasks that say \"implement the feature\" without acceptance criteria",
@@ -3279,7 +3554,7 @@
       "chars": 66
     },
     {
-      "id": "planning-and-task-breakdown--red-flag-4",
+      "id": "planning-and-task-breakdown--red-flag-5",
       "skill": "planning-and-task-breakdown",
       "type": "red-flag",
       "hook": "No verification steps in the plan",
@@ -3287,7 +3562,7 @@
       "chars": 33
     },
     {
-      "id": "planning-and-task-breakdown--red-flag-5",
+      "id": "planning-and-task-breakdown--red-flag-6",
       "skill": "planning-and-task-breakdown",
       "type": "red-flag",
       "hook": "All tasks are XL-sized",
@@ -3295,7 +3570,7 @@
       "chars": 22
     },
     {
-      "id": "planning-and-task-breakdown--red-flag-6",
+      "id": "planning-and-task-breakdown--red-flag-7",
       "skill": "planning-and-task-breakdown",
       "type": "red-flag",
       "hook": "No checkpoints between tasks",
@@ -3303,7 +3578,7 @@
       "chars": 28
     },
     {
-      "id": "planning-and-task-breakdown--red-flag-7",
+      "id": "planning-and-task-breakdown--red-flag-8",
       "skill": "planning-and-task-breakdown",
       "type": "red-flag",
       "hook": "Dependency order isn't considered",
@@ -3410,12 +3685,20 @@
       "id": "security-and-hardening--red-flag-2",
       "skill": "security-and-hardening",
       "type": "red-flag",
+      "hook": "A delete, move, or overwrite whose target comes from a payload, a config value, or another process's command line, guarded only by a shape check on the path",
+      "payoff": "",
+      "chars": 156
+    },
+    {
+      "id": "security-and-hardening--red-flag-3",
+      "skill": "security-and-hardening",
+      "type": "red-flag",
       "hook": "Secrets in source code or commit history",
       "payoff": "",
       "chars": 40
     },
     {
-      "id": "security-and-hardening--red-flag-3",
+      "id": "security-and-hardening--red-flag-4",
       "skill": "security-and-hardening",
       "type": "red-flag",
       "hook": "API endpoints without authentication or authorization checks",
@@ -3423,7 +3706,7 @@
       "chars": 60
     },
     {
-      "id": "security-and-hardening--red-flag-4",
+      "id": "security-and-hardening--red-flag-5",
       "skill": "security-and-hardening",
       "type": "red-flag",
       "hook": "Missing CORS configuration or wildcard (`*`) origins",
@@ -3431,15 +3714,15 @@
       "chars": 52
     },
     {
-      "id": "security-and-hardening--red-flag-5",
+      "id": "security-and-hardening--red-flag-6",
       "skill": "security-and-hardening",
       "type": "red-flag",
-      "hook": "No rate limiting on authentication endpoints",
+      "hook": "No rate limiting on authentication endpoints, or an in-memory limiter in front of more than one instance",
       "payoff": "",
-      "chars": 44
+      "chars": 104
     },
     {
-      "id": "security-and-hardening--red-flag-6",
+      "id": "security-and-hardening--red-flag-7",
       "skill": "security-and-hardening",
       "type": "red-flag",
       "hook": "Stack traces or internal errors exposed to users",
@@ -3447,7 +3730,7 @@
       "chars": 48
     },
     {
-      "id": "security-and-hardening--red-flag-7",
+      "id": "security-and-hardening--red-flag-8",
       "skill": "security-and-hardening",
       "type": "red-flag",
       "hook": "Dependencies with known critical vulnerabilities, competing lockfiles at one installation boundary, non-reproducible installs, or blanket-approved scripts",
@@ -3455,7 +3738,7 @@
       "chars": 154
     },
     {
-      "id": "security-and-hardening--red-flag-8",
+      "id": "security-and-hardening--red-flag-9",
       "skill": "security-and-hardening",
       "type": "red-flag",
       "hook": "Server fetches user-supplied URLs without an allowlist (SSRF)",
@@ -3463,7 +3746,7 @@
       "chars": 61
     },
     {
-      "id": "security-and-hardening--red-flag-9",
+      "id": "security-and-hardening--red-flag-10",
       "skill": "security-and-hardening",
       "type": "red-flag",
       "hook": "LLM/model output passed into a query, the DOM, a shell, or `eval`",
@@ -3471,7 +3754,7 @@
       "chars": 65
     },
     {
-      "id": "security-and-hardening--red-flag-10",
+      "id": "security-and-hardening--red-flag-11",
       "skill": "security-and-hardening",
       "type": "red-flag",
       "hook": "Secrets, PII, or the full system prompt placed inside an LLM context window",
@@ -3479,7 +3762,7 @@
       "chars": 75
     },
     {
-      "id": "security-and-hardening--red-flag-11",
+      "id": "security-and-hardening--red-flag-12",
       "skill": "security-and-hardening",
       "type": "red-flag",
       "hook": "Personal data collected with no stated purpose, retention limit, or deletion path",
@@ -3487,7 +3770,7 @@
       "chars": 81
     },
     {
-      "id": "security-and-hardening--red-flag-12",
+      "id": "security-and-hardening--red-flag-13",
       "skill": "security-and-hardening",
       "type": "red-flag",
       "hook": "PII sent to analytics/ad/LLM vendors with no consent or data-processing agreement",
@@ -3495,7 +3778,7 @@
       "chars": 81
     },
     {
-      "id": "security-and-hardening--red-flag-13",
+      "id": "security-and-hardening--red-flag-14",
       "skill": "security-and-hardening",
       "type": "red-flag",
       "hook": "\"Delete my account\" that only flips a flag while the personal data lingers in stores and backups",
